@@ -913,7 +913,7 @@ UsedLibrary="C:/Softwares/EAGLE 8.0.1/lbr/Costume/SourceTree/Eagle-Libraries-mas
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 1919 1000"
+Loc="-9 -9 1910 991"
 State=1
 Number=0
 
