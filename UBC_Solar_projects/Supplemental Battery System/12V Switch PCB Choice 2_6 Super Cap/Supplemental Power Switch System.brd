@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -479,8 +479,8 @@ design rules under a new name.</description>
 </element>
 <element name="U$1" library="Hooman" package="G8QN-1C4" value="SPDT_RELAY" x="24.13" y="34.29" rot="R180"/>
 <element name="X1" library="con-molex" package="5566-4" value="5566-4" x="24.13" y="8.89">
-<attribute name="MPN" value="" x="24.13" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="24.13" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="24.13" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="24.13" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="24.13" y="8.89" size="1.778" layer="27" display="off"/>
 </element>
@@ -502,25 +502,16 @@ design rules under a new name.</description>
 <signal name="ZEVA+">
 <contactref element="CONTROL" pad="2"/>
 <contactref element="U$1" pad="2"/>
-<wire x1="6.35" y1="22.38" x2="8.41" y2="22.38" width="0.8128" layer="1"/>
-<wire x1="8.41" y1="22.38" x2="12.7" y2="26.67" width="0.8128" layer="1"/>
-<wire x1="12.7" y1="26.67" x2="12.7" y2="29.21" width="0.8128" layer="1"/>
-<wire x1="12.7" y1="29.21" x2="15.24" y2="31.75" width="0.8128" layer="1"/>
-<wire x1="15.24" y1="31.75" x2="25.52" y2="31.75" width="0.8128" layer="1"/>
-<wire x1="25.52" y1="31.75" x2="27.98" y2="29.29" width="0.8128" layer="1"/>
+<wire x1="6.35" y1="22.38" x2="21.07" y2="22.38" width="1.27" layer="16"/>
+<wire x1="21.07" y1="22.38" x2="27.98" y2="29.29" width="1.27" layer="16"/>
 </signal>
 <signal name="ZEVA-">
 <contactref element="U$1" pad="5"/>
 <contactref element="CONTROL" pad="1"/>
-<wire x1="6.35" y1="25.88" x2="6.505" y2="26.035" width="0.8128" layer="1"/>
-<wire x1="6.505" y1="26.035" x2="9.525" y2="26.035" width="0.8128" layer="1"/>
-<wire x1="9.525" y1="26.035" x2="10.795" y2="27.305" width="0.8128" layer="1"/>
-<wire x1="10.795" y1="29.845" x2="14.605" y2="33.655" width="0.8128" layer="1"/>
-<wire x1="14.605" y1="33.655" x2="26.035" y2="33.655" width="0.8128" layer="1"/>
-<wire x1="26.035" y1="33.655" x2="27.305" y2="34.925" width="0.8128" layer="1"/>
-<wire x1="27.305" y1="38.615" x2="27.98" y2="39.29" width="0.8128" layer="1"/>
-<wire x1="10.795" y1="27.305" x2="10.795" y2="29.845" width="0.8128" layer="1"/>
-<wire x1="27.305" y1="34.925" x2="27.305" y2="38.615" width="0.8128" layer="1"/>
+<wire x1="6.35" y1="25.88" x2="8.1" y2="25.88" width="1.27" layer="16"/>
+<wire x1="16.51" y1="34.29" x2="22.98" y2="34.29" width="1.27" layer="16"/>
+<wire x1="22.98" y1="34.29" x2="27.98" y2="39.29" width="1.27" layer="16"/>
+<wire x1="8.1" y1="25.88" x2="16.51" y2="34.29" width="1.27" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="X1" pad="1"/>
@@ -579,10 +570,11 @@ design rules under a new name.</description>
 <signal name="NC">
 <contactref element="U$1" pad="4"/>
 <contactref element="BATTERY" pad="1"/>
-<wire x1="6.35" y1="38.58" x2="10.64" y2="38.58" width="1.778" layer="1"/>
-<wire x1="10.64" y1="38.58" x2="11.43" y2="39.37" width="1.778" layer="1"/>
-<wire x1="11.43" y1="39.37" x2="17.7" y2="39.37" width="1.778" layer="1"/>
+<wire x1="6.35" y1="38.58" x2="10.64" y2="38.58" width="1.778" layer="16"/>
+<wire x1="10.64" y1="38.58" x2="11.43" y2="39.37" width="1.778" layer="16"/>
+<wire x1="11.43" y1="39.37" x2="17.7" y2="39.37" width="1.778" layer="16"/>
 <wire x1="17.7" y1="39.37" x2="17.78" y2="39.29" width="1.778" layer="1"/>
+<via x="17.7" y="39.37" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 <signal name="N$3">
 <contactref element="C3" pad="B"/>

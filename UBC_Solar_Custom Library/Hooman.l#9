@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -93,6 +93,41 @@ Omron G8QN SPDT Relay</description>
 <text x="-2.54" y="2.54" size="0.635" layer="27">&gt;Value</text>
 <text x="-2.54" y="-1.27" size="0.635" layer="25">&gt;Name</text>
 </package>
+<package name="MOLEX-172287">
+<description>Molex UltraFit Header 3.5mm pitch</description>
+<wire x1="-5.3" y1="-2.675" x2="5.3" y2="-2.675" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-2.675" x2="5.3" y2="2.675" width="0.127" layer="51"/>
+<wire x1="5.3" y1="2.675" x2="3.645" y2="2.675" width="0.127" layer="51"/>
+<wire x1="3.645" y1="2.675" x2="3.645" y2="5.735" width="0.127" layer="51"/>
+<wire x1="3.645" y1="5.735" x2="-3.645" y2="5.735" width="0.127" layer="51"/>
+<wire x1="-3.645" y1="5.735" x2="-3.645" y2="2.675" width="0.127" layer="51"/>
+<wire x1="-3.645" y1="2.675" x2="-5.3" y2="2.675" width="0.127" layer="51"/>
+<wire x1="-5.3" y1="2.675" x2="-5.3" y2="-2.675" width="0.127" layer="51"/>
+<pad name="1" x="-1.75" y="0" drill="1.02" shape="square"/>
+<pad name="2" x="1.75" y="0" drill="1.02" shape="square"/>
+<hole x="-4.25" y="-0.63" drill="2.3"/>
+<hole x="4.25" y="-0.63" drill="2.3"/>
+<text x="-2.54063125" y="3.80479375" size="0.635" layer="27">&gt;Value</text>
+<text x="-2.54" y="2.54" size="0.635" layer="25">&gt;Name</text>
+</package>
+<package name="DMF">
+<description>footprint for Murata Super Capacitor
+	
+DMF3Z5R5H474M3DTA0</description>
+<wire x1="10.75" y1="7.25" x2="-10.75" y2="7.25" width="0.127" layer="51"/>
+<wire x1="-10.75" y1="7.25" x2="-10.75" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-10.75" y1="-7.25" x2="10.75" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="10.75" y1="-7.25" x2="10.75" y2="7.25" width="0.127" layer="51"/>
+<smd name="-" x="14.25" y="3.5" dx="4" dy="2.5" layer="1"/>
+<smd name="B" x="14.25" y="0" dx="4" dy="2.5" layer="1"/>
+<smd name="+" x="14.25" y="-3.5" dx="4" dy="2.5" layer="1"/>
+<wire x1="-11.43" y1="7.62" x2="11.43" y2="7.62" width="0.3048" layer="21"/>
+<wire x1="11.43" y1="7.62" x2="11.43" y2="-7.62" width="0.3048" layer="21"/>
+<wire x1="11.43" y1="-7.62" x2="-11.43" y2="-7.62" width="0.3048" layer="21"/>
+<wire x1="-11.43" y1="-7.62" x2="-11.43" y2="7.62" width="0.3048" layer="21"/>
+<text x="-7.62" y="5.08" size="0.635" layer="27">&gt;Value</text>
+<text x="-7.62" y="-3.81" size="0.635" layer="25">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="HRS3H-S-DC5V">
@@ -123,6 +158,25 @@ Digikey Link:  &lt;a href='http://www.digikey.ca/product-detail/en/omron-electro
 <pin name="OUT" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
 <text x="-10.16" y="13.716" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="95">&gt;Value</text>
+</symbol>
+<symbol name="MOLEX-ULTRA-FIT-172287">
+<description>Molex Ultra-Fit 3.5mm Pitch 2pin connector (header)</description>
+<pin name="1" x="-2.54" y="2.54" length="middle"/>
+<pin name="2" x="-2.54" y="-2.54" length="middle"/>
+<text x="-5.08" y="5.08" size="1.778" layer="96">&gt;Value</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="95">&gt;Name</text>
+</symbol>
+<symbol name="DMF3Z5R5H474M3DTA0">
+<description>DMF3Z5R5H474M3DTA0 Super Capacitor
+
+&lt;a href='http://www.digikey.ca/products/en?keywords=DMF3Z5R5'&gt; http://www.digikey.ca/products/en?keywords=DMF3Z5R5 &lt;/a&gt;</description>
+<wire x1="-7.62" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="-" x="-12.7" y="5.08" length="middle"/>
+<pin name="+" x="-12.7" y="-5.08" length="middle"/>
+<pin name="B" x="-12.7" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -158,6 +212,43 @@ Digikey Link:  &lt;a href='http://www.digikey.ca/product-detail/en/omron-electro
 <connect gate="U1" pin="NC" pad="4"/>
 <connect gate="U1" pin="NO" pad="3"/>
 <connect gate="U1" pin="OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="172287-11-02">
+<description>Ultra-Fit™ 172287 Header
+
+molex ultrafit 3.5 mm pitch 2 pin connector header</description>
+<gates>
+<gate name="G$1" symbol="MOLEX-ULTRA-FIT-172287" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOLEX-172287">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SUPER-CAPACITOR">
+<description>Murata Super Capacitor DMF3Z5R5H474M3DTA0</description>
+<gates>
+<gate name="G$1" symbol="DMF3Z5R5H474M3DTA0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DMF">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="B" pad="B"/>
 </connects>
 <technologies>
 <technology name=""/>

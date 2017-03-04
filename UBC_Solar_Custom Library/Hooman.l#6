@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -110,6 +110,44 @@ Omron G8QN SPDT Relay</description>
 <text x="-2.54063125" y="3.80479375" size="0.635" layer="27">&gt;Value</text>
 <text x="-2.54" y="2.54" size="0.635" layer="25">&gt;Name</text>
 </package>
+<package name="DMF">
+<description>footprint for Murata Super Capacitor
+	
+DMF3Z5R5H474M3DTA0</description>
+<wire x1="10.75" y1="7.25" x2="-10.75" y2="7.25" width="0.127" layer="51"/>
+<wire x1="-10.75" y1="7.25" x2="-10.75" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-10.75" y1="-7.25" x2="10.75" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="10.75" y1="-7.25" x2="10.75" y2="7.25" width="0.127" layer="51"/>
+<smd name="-" x="14.25" y="3.5" dx="4" dy="2.5" layer="1"/>
+<smd name="B" x="14.25" y="0" dx="4" dy="2.5" layer="1"/>
+<smd name="+" x="14.25" y="-3.5" dx="4" dy="2.5" layer="1"/>
+<wire x1="-11.43" y1="7.62" x2="11.43" y2="7.62" width="0.3048" layer="21"/>
+<wire x1="11.43" y1="7.62" x2="11.43" y2="-7.62" width="0.3048" layer="21"/>
+<wire x1="11.43" y1="-7.62" x2="-11.43" y2="-7.62" width="0.3048" layer="21"/>
+<wire x1="-11.43" y1="-7.62" x2="-11.43" y2="7.62" width="0.3048" layer="21"/>
+<text x="-7.62" y="5.08" size="0.635" layer="27">&gt;Value</text>
+<text x="-7.62" y="-3.81" size="0.635" layer="25">&gt;Name</text>
+</package>
+<package name="42385-MINI-FIT">
+<pad name="P$1" x="2.1" y="2.25" drill="1.4" shape="square"/>
+<pad name="P$2" x="-2.1" y="2.25" drill="1.4" shape="square"/>
+<pad name="P$3" x="-2.1" y="-2.25" drill="1.4" shape="square"/>
+<pad name="P$4" x="2.1" y="-2.25" drill="1.4" shape="square"/>
+<hole x="-6.8" y="2.81" drill="3"/>
+<hole x="6.8" y="2.81" drill="3"/>
+<wire x1="4.8" y1="4.8" x2="-4.8" y2="4.8" width="0.127" layer="51"/>
+<wire x1="4.8" y1="4.8" x2="4.8" y2="4.5" width="0.127" layer="51"/>
+<wire x1="4.8" y1="1" x2="4.8" y2="-4.8" width="0.127" layer="51"/>
+<wire x1="4.8" y1="-4.8" x2="-4.8" y2="-4.8" width="0.127" layer="51"/>
+<wire x1="-4.8" y1="-4.8" x2="-4.8" y2="1" width="0.127" layer="51"/>
+<wire x1="-4.8" y1="1" x2="-8.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="1" x2="-8.5" y2="4.5" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="4.5" x2="-4.8" y2="4.5" width="0.127" layer="51"/>
+<wire x1="-4.8" y1="4.5" x2="-4.8" y2="4.8" width="0.127" layer="51"/>
+<wire x1="4.8" y1="1" x2="8.75" y2="1" width="0.127" layer="51"/>
+<wire x1="8.75" y1="1" x2="8.75" y2="4.5" width="0.127" layer="51"/>
+<wire x1="8.75" y1="4.5" x2="4.8" y2="4.5" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HRS3H-S-DC5V">
@@ -147,6 +185,18 @@ Digikey Link:  &lt;a href='http://www.digikey.ca/product-detail/en/omron-electro
 <pin name="2" x="-2.54" y="-2.54" length="middle"/>
 <text x="-5.08" y="5.08" size="1.778" layer="96">&gt;Value</text>
 <text x="-5.08" y="-7.62" size="1.778" layer="95">&gt;Name</text>
+</symbol>
+<symbol name="DMF3Z5R5H474M3DTA0">
+<description>DMF3Z5R5H474M3DTA0 Super Capacitor
+
+&lt;a href='http://www.digikey.ca/products/en?keywords=DMF3Z5R5'&gt; http://www.digikey.ca/products/en?keywords=DMF3Z5R5 &lt;/a&gt;</description>
+<wire x1="-7.62" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="-" x="-12.7" y="5.08" length="middle"/>
+<pin name="+" x="-12.7" y="-5.08" length="middle"/>
+<pin name="B" x="-12.7" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -189,7 +239,10 @@ Digikey Link:  &lt;a href='http://www.digikey.ca/product-detail/en/omron-electro
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOLEX-ULTRA-FIT">
+<deviceset name="172287-11-02">
+<description>&lt;h&gt;Ultra-Fit™ 172287 Header&lt;/h&gt;
+
+Molex 3.5 mm pitch 2 pin connector header</description>
 <gates>
 <gate name="G$1" symbol="MOLEX-ULTRA-FIT-172287" x="0" y="0"/>
 </gates>
@@ -198,6 +251,24 @@ Digikey Link:  &lt;a href='http://www.digikey.ca/product-detail/en/omron-electro
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SUPER-CAPACITOR">
+<description>Murata Super Capacitor DMF3Z5R5H474M3DTA0</description>
+<gates>
+<gate name="G$1" symbol="DMF3Z5R5H474M3DTA0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DMF">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="B" pad="B"/>
 </connects>
 <technologies>
 <technology name=""/>
