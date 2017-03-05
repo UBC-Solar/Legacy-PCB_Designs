@@ -6,6 +6,7 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="C:/Users/Hooman/workspace/UBC_Solar_Repos_PCB_Designs/UBC_Solar_Custom Library/Hooman.lbr"
 UsedLibrary="C:/Softwares/EAGLE 8.0.1/lbr/19inch.lbr"
 UsedLibrary="C:/Softwares/EAGLE 8.0.1/lbr/40xx.lbr"
 UsedLibrary="C:/Softwares/EAGLE 8.0.1/lbr/41xx.lbr"

@@ -158,7 +158,7 @@ Omron G8QN SPDT Relay</description>
 <text x="-2.54" y="2.54" size="0.635" layer="27">&gt;Value</text>
 <text x="-2.54" y="-1.27" size="0.635" layer="25">&gt;Name</text>
 </package>
-<package name="172287-ULTRA-FIT">
+<package name="MOLEX-172287">
 <description>Molex UltraFit Header 3.5mm pitch</description>
 <wire x1="-5.3" y1="-2.675" x2="5.3" y2="-2.675" width="0.127" layer="51"/>
 <wire x1="5.3" y1="-2.675" x2="5.3" y2="2.675" width="0.127" layer="51"/>
@@ -174,20 +174,6 @@ Omron G8QN SPDT Relay</description>
 <hole x="4.25" y="-0.63" drill="2.3"/>
 <text x="-2.54063125" y="3.80479375" size="0.635" layer="27">&gt;Value</text>
 <text x="-2.54" y="2.54" size="0.635" layer="25">&gt;Name</text>
-<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-3.175" x2="-1.905" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="-3.175" x2="-1.905" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="-2.54" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="-1.905" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="2.54" x2="3.81" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="6.35" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="6.35" x2="-3.81" y2="6.35" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="6.35" x2="-3.81" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="2.54" x2="-5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-1.905" width="0.2032" layer="21"/>
 </package>
 <package name="DMF">
 <description>footprint for Murata Super Capacitor
@@ -224,6 +210,13 @@ Digikey Link:  &lt;a href='http://www.digikey.ca/product-detail/en/omron-electro
 <pin name="OUT" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
 <text x="-10.16" y="13.716" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="95">&gt;Value</text>
+</symbol>
+<symbol name="MOLEX-ULTRA-FIT-172287">
+<description>Molex Ultra-Fit 3.5mm Pitch 2pin connector (header)</description>
+<pin name="1" x="-2.54" y="2.54" length="middle"/>
+<pin name="2" x="-2.54" y="-2.54" length="middle"/>
+<text x="-5.08" y="5.08" size="1.778" layer="96">&gt;Value</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="95">&gt;Name</text>
 </symbol>
 <symbol name="DMF3Z5R5H474M3DTA0">
 <description>DMF3Z5R5H474M3DTA0 Super Capacitor
@@ -270,6 +263,23 @@ Digikey Link:  &lt;a href='http://www.digikey.ca/product-detail/en/omron-electro
 </device>
 </devices>
 </deviceset>
+<deviceset name="MOLEX-ULTRA-FIT">
+<description>molex ultrafit 3.5 mm pitch 2 pin connector header</description>
+<gates>
+<gate name="G$1" symbol="MOLEX-ULTRA-FIT-172287" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOLEX-172287">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="SUPER-CAPACITOR">
 <description>Murata Super Capacitor DMF3Z5R5H474M3DTA0</description>
 <gates>
@@ -296,7 +306,7 @@ Molex 3.5 mm pitch 2 pin connector header</description>
 <gate name="G$1" symbol="CON-2-PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="172287-ULTRA-FIT">
+<device name="" package="MOLEX-172287">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -877,6 +887,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="U$1" library="Hooman" deviceset="SPDT_RELAY" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="NO_PACKAGE"/>
 <part name="X1" library="con-molex" deviceset="5566-4" device=""/>
+<part name="CAN" library="Hooman" deviceset="MOLEX-ULTRA-FIT" device=""/>
 <part name="C1" library="Hooman" deviceset="SUPER-CAPACITOR" device=""/>
 <part name="C2" library="Hooman" deviceset="SUPER-CAPACITOR" device=""/>
 <part name="C3" library="Hooman" deviceset="SUPER-CAPACITOR" device=""/>
@@ -889,7 +900,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="CONTROL" library="Hooman" deviceset="172287-11-02" device=""/>
 <part name="DC-DC_CONVERTOR" library="Hooman" deviceset="172287-11-02" device=""/>
 <part name="BATTERY" library="Hooman" deviceset="172287-11-02" device=""/>
-<part name="CAN" library="Hooman" deviceset="172287-11-02" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -903,6 +913,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="X1" gate="-2" x="144.78" y="71.12"/>
 <instance part="X1" gate="-3" x="144.78" y="68.58"/>
 <instance part="X1" gate="-4" x="144.78" y="66.04"/>
+<instance part="CAN" gate="G$1" x="180.34" y="119.38"/>
 <instance part="C1" gate="G$1" x="200.66" y="99.06"/>
 <instance part="C2" gate="G$1" x="200.66" y="76.2"/>
 <instance part="C3" gate="G$1" x="200.66" y="53.34"/>
@@ -915,21 +926,20 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="CONTROL" gate="G$1" x="55.88" y="129.54" rot="R180"/>
 <instance part="DC-DC_CONVERTOR" gate="G$1" x="55.88" y="99.06" rot="R180"/>
 <instance part="BATTERY" gate="G$1" x="58.42" y="73.66" rot="R180"/>
-<instance part="CAN" gate="G$1" x="185.42" y="116.84"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="ZEVA+" class="0">
 <segment>
+<wire x1="60.96" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
+<label x="68.58" y="132.08" size="1.778" layer="95"/>
+<pinref part="CONTROL" gate="G$1" pin="2"/>
+</segment>
+<segment>
 <pinref part="U$1" gate="U1" pin="COIL+"/>
 <wire x1="101.6" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
 <label x="91.44" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CONTROL" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
-<label x="66.04" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ZEVA-" class="0">
@@ -939,9 +949,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="91.44" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CONTROL" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="124.46" x2="71.12" y2="124.46" width="0.1524" layer="91"/>
-<label x="66.04" y="124.46" size="1.778" layer="95"/>
+<wire x1="60.96" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+<label x="68.58" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -965,7 +974,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="78.74" y="76.2"/>
 <label x="66.04" y="101.6" size="1.778" layer="95"/>
 <label x="66.04" y="76.2" size="1.778" layer="95"/>
-<wire x1="160.02" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="CAN" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="121.92" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="187.96" y1="104.14" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
 <junction x="160.02" y="104.14"/>
@@ -974,8 +984,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="175.26" y="104.14"/>
 <pinref part="DC-DC_CONVERTOR" gate="G$1" pin="2"/>
 <pinref part="BATTERY" gate="G$1" pin="2"/>
-<pinref part="CAN" gate="G$1" pin="1"/>
-<label x="172.72" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -983,7 +991,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="U$1" gate="U1" pin="OUT"/>
 <wire x1="132.08" y1="106.68" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="106.68" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="106.68" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="106.68" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
 <label x="137.16" y="76.2" size="1.778" layer="95"/>
 <junction x="137.16" y="106.68"/>
 <pinref part="X1" gate="-4" pin="S"/>
@@ -992,15 +1000,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="X1" gate="-3" pin="S"/>
 <wire x1="142.24" y1="68.58" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
 <junction x="142.24" y="66.04"/>
-<wire x1="180.34" y1="114.3" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="CAN" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="+"/>
 <wire x1="187.96" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="48.26" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <junction x="170.18" y="48.26"/>
-<pinref part="CAN" gate="G$1" pin="2"/>
-<label x="172.72" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="NO" class="0">
