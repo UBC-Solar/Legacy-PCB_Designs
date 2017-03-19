@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -207,6 +207,23 @@ DMF3Z5R5H474M3DTA0</description>
 <text x="-7.62" y="5.08" size="0.635" layer="27">&gt;Value</text>
 <text x="-7.62" y="-3.81" size="0.635" layer="25">&gt;Name</text>
 </package>
+<package name="3568-MINI-297">
+<description>3568- MINI 297 series  fuse holder for BLADE MINI fuse</description>
+<pad name="P$1" x="4.96" y="1.7" drill="1.6" shape="square"/>
+<pad name="P$3" x="-4.96" y="1.7" drill="1.6" shape="square"/>
+<pad name="P$4" x="-4.96" y="-1.7" drill="1.6" shape="square"/>
+<pad name="P$2" x="4.96" y="-1.7" drill="1.6" shape="square"/>
+<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="3.81" x2="7.62" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-3.81" x2="-7.62" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="-3.81" x2="-7.62" y2="3.81" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="3.81" x2="7.62" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="-3.81" x2="-7.62" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-3.81" x2="-7.62" y2="3.81" width="0.2032" layer="21"/>
+<text x="-2.54" y="2.54" size="0.635" layer="27">&gt;Value</text>
+<text x="-2.54" y="-2.54" size="0.635" layer="25">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="G8QN-1C4">
@@ -247,6 +264,20 @@ Digikey Link:  &lt;a href='http://www.digikey.ca/product-detail/en/omron-electro
 <wire x1="0" y1="7.62" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FUSE">
+<description>Fuse</description>
+<wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<pin name="P$1" x="-12.7" y="0" length="middle"/>
+<pin name="P$2" x="12.7" y="0" length="middle" rot="R180"/>
+<text x="-7.62" y="5.08" size="0.635" layer="96">&gt;Value</text>
+<text x="-7.62" y="-5.08" size="0.635" layer="95">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -300,6 +331,26 @@ Molex 3.5 mm pitch 2 pin connector header</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3568">
+<description>&lt;h&gt;&lt;b&gt;MINI 296 fuse holder&lt;/b&gt;&lt;/h&gt;
+ for MINI BLADE fuse
+
+https://www.digikey.ca/products/en?FV=ffec3ba1,ffe0008c</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3568-MINI-297">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
+<connect gate="G$1" pin="P$2" pad="P$3 P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -890,6 +941,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="DC-DC_CONVERTOR" library="Hooman" deviceset="172287-11-02" device=""/>
 <part name="BATTERY" library="Hooman" deviceset="172287-11-02" device=""/>
 <part name="CAN" library="Hooman" deviceset="172287-11-02" device=""/>
+<part name="FUSE-10A" library="Hooman" deviceset="3568" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -915,7 +967,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="CONTROL" gate="G$1" x="55.88" y="129.54" rot="R180"/>
 <instance part="DC-DC_CONVERTOR" gate="G$1" x="55.88" y="99.06" rot="R180"/>
 <instance part="BATTERY" gate="G$1" x="58.42" y="73.66" rot="R180"/>
-<instance part="CAN" gate="G$1" x="185.42" y="116.84"/>
+<instance part="CAN" gate="G$1" x="200.66" y="116.84"/>
+<instance part="FUSE-10A" gate="G$1" x="180.34" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -965,7 +1018,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="78.74" y="76.2"/>
 <label x="66.04" y="101.6" size="1.778" layer="95"/>
 <label x="66.04" y="76.2" size="1.778" layer="95"/>
-<wire x1="160.02" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="121.92" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="187.96" y1="104.14" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
 <junction x="160.02" y="104.14"/>
@@ -992,15 +1045,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="X1" gate="-3" pin="S"/>
 <wire x1="142.24" y1="68.58" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
 <junction x="142.24" y="66.04"/>
-<wire x1="180.34" y1="114.3" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="+"/>
 <wire x1="187.96" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="48.26" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <junction x="170.18" y="48.26"/>
-<pinref part="CAN" gate="G$1" pin="2"/>
-<label x="172.72" y="114.3" size="1.778" layer="95"/>
+<label x="152.4" y="106.68" size="1.778" layer="95"/>
+<pinref part="FUSE-10A" gate="G$1" pin="P$1"/>
+<wire x1="167.64" y1="114.3" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NO" class="0">
@@ -1085,6 +1138,13 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="175.26" y="93.98"/>
 <pinref part="C1" gate="G$1" pin="B"/>
 <wire x1="185.42" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="CAN" gate="G$1" pin="2"/>
+<pinref part="FUSE-10A" gate="G$1" pin="P$2"/>
+<wire x1="195.58" y1="114.3" x2="193.04" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

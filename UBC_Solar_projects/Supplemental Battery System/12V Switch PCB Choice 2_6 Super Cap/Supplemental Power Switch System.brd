@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -232,6 +232,23 @@ DMF3Z5R5H474M3DTA0</description>
 <wire x1="-11.43" y1="-7.62" x2="-11.43" y2="7.62" width="0.3048" layer="21"/>
 <text x="-7.62" y="5.08" size="0.635" layer="27">&gt;Value</text>
 <text x="-7.62" y="-3.81" size="0.635" layer="25">&gt;Name</text>
+</package>
+<package name="3568-MINI-297">
+<description>3568- MINI 297 series  fuse holder for BLADE MINI fuse</description>
+<pad name="P$1" x="4.96" y="1.7" drill="1.6" shape="square"/>
+<pad name="P$3" x="-4.96" y="1.7" drill="1.6" shape="square"/>
+<pad name="P$4" x="-4.96" y="-1.7" drill="1.6" shape="square"/>
+<pad name="P$2" x="4.96" y="-1.7" drill="1.6" shape="square"/>
+<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="3.81" x2="7.62" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-3.81" x2="-7.62" y2="-3.81" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="-3.81" x2="-7.62" y2="3.81" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="3.81" x2="7.62" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="-3.81" x2="-7.62" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-3.81" x2="-7.62" y2="3.81" width="0.2032" layer="21"/>
+<text x="-2.54" y="2.54" size="0.635" layer="27">&gt;Value</text>
+<text x="-2.54" y="-2.54" size="0.635" layer="25">&gt;Name</text>
 </package>
 </packages>
 </library>
@@ -510,7 +527,8 @@ design rules under a new name.</description>
 <element name="CONTROL" library="Hooman" package="172287-ULTRA-FIT" value="172287-11-02" x="5.08" y="24.13" rot="R270"/>
 <element name="DC-DC_CONVERTOR" library="Hooman" package="172287-ULTRA-FIT" value="172287-11-02" x="5.08" y="11.43" rot="R270"/>
 <element name="BATTERY" library="Hooman" package="172287-ULTRA-FIT" value="172287-11-02" x="5.08" y="36.83" rot="R270"/>
-<element name="CAN" library="Hooman" package="172287-ULTRA-FIT" value="172287-11-02" x="66.04" y="43.18" rot="R180"/>
+<element name="CAN" library="Hooman" package="172287-ULTRA-FIT" value="172287-11-02" x="83.82" y="40.64" rot="R90"/>
+<element name="FUSE-10A" library="Hooman" package="3568-MINI-297" value="3568" x="63.5" y="41.91" rot="R180"/>
 </elements>
 <signals>
 <signal name="ZEVA+">
@@ -548,7 +566,6 @@ design rules under a new name.</description>
 <contactref element="X1" pad="3"/>
 <contactref element="C3" pad="+"/>
 <contactref element="R6" pad="1"/>
-<contactref element="CAN" pad="2"/>
 <wire x1="33.02" y1="31.75" x2="30.48" y2="34.29" width="3.81" layer="1"/>
 <wire x1="33.02" y1="31.75" x2="34.29" y2="30.48" width="3.81" layer="1"/>
 <wire x1="34.29" y1="30.48" x2="34.29" y2="26.67" width="3.81" layer="1"/>
@@ -560,7 +577,6 @@ design rules under a new name.</description>
 <wire x1="25.19" y1="11.64" x2="25.4" y2="11.43" width="3.81" layer="1"/>
 <wire x1="25.4" y1="11.43" x2="26.02" y2="11.43" width="3.81" layer="1"/>
 <wire x1="26.02" y1="11.43" x2="26.23" y2="11.64" width="3.81" layer="1"/>
-<wire x1="64.29" y1="40.16" x2="64.29" y2="43.18" width="2.54" layer="1"/>
 <wire x1="62.23" y1="38.1" x2="64.29" y2="40.16" width="2.54" layer="1"/>
 <wire x1="34.29" y1="38.1" x2="30.48" y2="34.29" width="3.81" layer="1"/>
 <wire x1="62.23" y1="38.1" x2="34.29" y2="38.1" width="3.81" layer="1"/>
@@ -576,7 +592,10 @@ design rules under a new name.</description>
 <wire x1="33.02" y1="31.75" x2="33.02" y2="33.02" width="2.54" layer="1"/>
 <wire x1="33.02" y1="33.02" x2="36.83" y2="36.83" width="2.54" layer="1"/>
 <wire x1="36.83" y1="36.83" x2="40.64" y2="36.83" width="2.54" layer="1"/>
-<wire x1="30.48" y1="34.29" x2="33.02" y2="31.75" width="2.54" layer="1"/>
+<contactref element="FUSE-10A" pad="P$1"/>
+<contactref element="FUSE-10A" pad="P$2"/>
+<wire x1="58.54" y1="40.21" x2="22.03" y2="11.64" width="0" layer="19" extent="1-1"/>
+<wire x1="58.54" y1="43.61" x2="58.54" y2="40.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="NO">
 <contactref element="U$1" pad="3"/>
@@ -641,6 +660,13 @@ design rules under a new name.</description>
 <wire x1="40.77" y1="31.75" x2="44.32" y2="31.75" width="0.8128" layer="1"/>
 <wire x1="44.32" y1="31.75" x2="43.18" y2="31.75" width="0.8128" layer="1"/>
 <wire x1="43.18" y1="31.75" x2="43.18" y2="26.95" width="0.8128" layer="1"/>
+</signal>
+<signal name="N$1">
+<contactref element="CAN" pad="2"/>
+<contactref element="FUSE-10A" pad="P$3"/>
+<contactref element="FUSE-10A" pad="P$4"/>
+<wire x1="68.46" y1="40.21" x2="83.82" y2="42.39" width="0" layer="19" extent="1-1"/>
+<wire x1="68.46" y1="43.61" x2="68.46" y2="40.21" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>

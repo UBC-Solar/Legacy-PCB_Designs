@@ -158,6 +158,37 @@ Omron G8QN SPDT Relay</description>
 <text x="-2.54" y="2.54" size="0.635" layer="27">&gt;Value</text>
 <text x="-2.54" y="-1.27" size="0.635" layer="25">&gt;Name</text>
 </package>
+<package name="172287-ULTRA-FIT">
+<description>Molex UltraFit Header 3.5mm pitch</description>
+<wire x1="-5.3" y1="-2.675" x2="5.3" y2="-2.675" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-2.675" x2="5.3" y2="2.675" width="0.127" layer="51"/>
+<wire x1="5.3" y1="2.675" x2="3.645" y2="2.675" width="0.127" layer="51"/>
+<wire x1="3.645" y1="2.675" x2="3.645" y2="5.735" width="0.127" layer="51"/>
+<wire x1="3.645" y1="5.735" x2="-3.645" y2="5.735" width="0.127" layer="51"/>
+<wire x1="-3.645" y1="5.735" x2="-3.645" y2="2.675" width="0.127" layer="51"/>
+<wire x1="-3.645" y1="2.675" x2="-5.3" y2="2.675" width="0.127" layer="51"/>
+<wire x1="-5.3" y1="2.675" x2="-5.3" y2="-2.675" width="0.127" layer="51"/>
+<pad name="1" x="-1.75" y="0" drill="1.02" shape="square"/>
+<pad name="2" x="1.75" y="0" drill="1.02" shape="square"/>
+<hole x="-4.25" y="-0.63" drill="2.3"/>
+<hole x="4.25" y="-0.63" drill="2.3"/>
+<text x="-2.54063125" y="3.80479375" size="0.635" layer="27">&gt;Value</text>
+<text x="-2.54" y="2.54" size="0.635" layer="25">&gt;Name</text>
+<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-3.175" x2="-1.905" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="-3.175" x2="-1.905" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-1.905" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.54" x2="3.81" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="6.35" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="6.35" x2="-3.81" y2="6.35" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="6.35" x2="-3.81" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="2.54" x2="-5.08" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-1.905" width="0.2032" layer="21"/>
+</package>
 <package name="MOLEX-172287">
 <description>Molex UltraFit Header 3.5mm pitch</description>
 <wire x1="-5.3" y1="-2.675" x2="5.3" y2="-2.675" width="0.127" layer="51"/>
@@ -306,7 +337,7 @@ Molex 3.5 mm pitch 2 pin connector header</description>
 <gate name="G$1" symbol="CON-2-PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MOLEX-172287">
+<device name="" package="172287-ULTRA-FIT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -998,6 +1029,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="X1" gate="-4" pin="S"/>
 <wire x1="137.16" y1="66.04" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="66.04" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-3" pin="S"/>
+<wire x1="142.24" y1="68.58" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
 <junction x="142.24" y="66.04"/>
 <pinref part="CAN" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
