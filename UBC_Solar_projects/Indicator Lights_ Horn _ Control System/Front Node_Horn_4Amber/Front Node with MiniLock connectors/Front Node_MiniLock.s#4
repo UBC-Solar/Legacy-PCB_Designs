@@ -986,9 +986,9 @@ general purpose rectifier, 1 A</description>
 <label x="17.78" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-28.448" y1="40.64" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
-<label x="-20.32" y="40.64" size="1.778" layer="95"/>
-<pinref part="ARDUINO" gate="G$1" pin="P$4"/>
+<wire x1="-28.448" y1="45.72" x2="-20.32" y2="45.72" width="0.1524" layer="91"/>
+<label x="-20.32" y="45.72" size="1.778" layer="95"/>
+<pinref part="ARDUINO" gate="G$1" pin="P$3"/>
 </segment>
 </net>
 <net name="ARDUINO_R" class="0">
@@ -998,9 +998,9 @@ general purpose rectifier, 1 A</description>
 <label x="25.4" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-28.448" y1="45.72" x2="-20.32" y2="45.72" width="0.1524" layer="91"/>
-<label x="-20.32" y="45.72" size="1.778" layer="95"/>
-<pinref part="ARDUINO" gate="G$1" pin="P$3"/>
+<wire x1="-28.448" y1="40.64" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
+<label x="-20.32" y="40.64" size="1.778" layer="95"/>
+<pinref part="ARDUINO" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="R" class="0">

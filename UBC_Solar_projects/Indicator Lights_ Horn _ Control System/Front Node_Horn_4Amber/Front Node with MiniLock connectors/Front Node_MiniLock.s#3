@@ -910,9 +910,9 @@ general purpose rectifier, 1 A</description>
 <pinref part="R-LIGHTS" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="-28.448" y1="30.48" x2="-20.32" y2="30.48" width="0.1524" layer="91"/>
-<label x="-22.86" y="30.48" size="1.778" layer="95"/>
-<pinref part="ARDUINO" gate="G$1" pin="P$6"/>
+<wire x1="-28.448" y1="55.88" x2="-17.78" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="ARDUINO" gate="G$1" pin="P$1"/>
+<label x="-22.86" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HORNSWITCH" class="0">
@@ -927,14 +927,12 @@ general purpose rectifier, 1 A</description>
 <junction x="71.12" y="7.62"/>
 </segment>
 <segment>
-<wire x1="-28.448" y1="50.8" x2="-17.78" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-28.448" y1="55.88" x2="-17.78" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="55.88" x2="-17.78" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="50.8" x2="-17.78" y2="48.26" width="0.1524" layer="91"/>
-<junction x="-17.78" y="50.8"/>
-<label x="-17.78" y="50.8" size="1.778" layer="95"/>
-<pinref part="ARDUINO" gate="G$1" pin="P$1"/>
-<pinref part="ARDUINO" gate="G$1" pin="P$2"/>
+<wire x1="-28.448" y1="35.56" x2="-20.32" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="ARDUINO" gate="G$1" pin="P$5"/>
+<wire x1="-28.448" y1="30.48" x2="-20.32" y2="30.48" width="0.1524" layer="91"/>
+<label x="-22.86" y="30.48" size="1.778" layer="95"/>
+<pinref part="ARDUINO" gate="G$1" pin="P$6"/>
+<wire x1="-20.32" y1="35.56" x2="-20.32" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -958,9 +956,9 @@ general purpose rectifier, 1 A</description>
 <label x="71.12" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-28.448" y1="35.56" x2="-20.32" y2="35.56" width="0.1524" layer="91"/>
-<label x="-20.32" y="35.56" size="1.778" layer="95"/>
-<pinref part="ARDUINO" gate="G$1" pin="P$5"/>
+<wire x1="-28.448" y1="50.8" x2="-17.78" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="ARDUINO" gate="G$1" pin="P$2"/>
+<label x="-22.86" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">

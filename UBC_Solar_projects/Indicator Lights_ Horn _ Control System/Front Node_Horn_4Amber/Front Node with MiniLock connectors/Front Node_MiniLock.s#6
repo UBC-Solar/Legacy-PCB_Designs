@@ -870,7 +870,7 @@ general purpose rectifier, 1 A</description>
 <part name="D1" library="diode" deviceset="1N4004" device=""/>
 <part name="L-LIGHTS" library="Hooman" deviceset="53375-0210" device=""/>
 <part name="R-LIGHTS" library="Hooman" deviceset="53375-0210" device=""/>
-<part name="U$5" library="Hooman" deviceset="53375-0610" device=""/>
+<part name="CONTROL" library="Hooman" deviceset="53375-0610" device=""/>
 <part name="HORN" library="Hooman" deviceset="172287-11-02" device=""/>
 </parts>
 <sheets>
@@ -892,7 +892,7 @@ general purpose rectifier, 1 A</description>
 <instance part="D1" gate="1" x="86.36" y="2.54" rot="R90"/>
 <instance part="L-LIGHTS" gate="G$1" x="134.62" y="66.04"/>
 <instance part="R-LIGHTS" gate="G$1" x="132.08" y="40.64"/>
-<instance part="U$5" gate="G$1" x="-37.338" y="43.942"/>
+<instance part="CONTROL" gate="G$1" x="-37.338" y="43.942"/>
 <instance part="HORN" gate="G$1" x="132.08" y="15.24"/>
 </instances>
 <busses>
@@ -912,7 +912,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <wire x1="-28.448" y1="30.48" x2="-20.32" y2="30.48" width="0.1524" layer="91"/>
 <label x="-22.86" y="30.48" size="1.778" layer="95"/>
-<pinref part="U$5" gate="G$1" pin="P$6"/>
+<pinref part="CONTROL" gate="G$1" pin="P$6"/>
 </segment>
 </net>
 <net name="HORNSWITCH" class="0">
@@ -933,8 +933,8 @@ general purpose rectifier, 1 A</description>
 <wire x1="-17.78" y1="50.8" x2="-17.78" y2="48.26" width="0.1524" layer="91"/>
 <junction x="-17.78" y="50.8"/>
 <label x="-17.78" y="50.8" size="1.778" layer="95"/>
-<pinref part="U$5" gate="G$1" pin="P$1"/>
-<pinref part="U$5" gate="G$1" pin="P$2"/>
+<pinref part="CONTROL" gate="G$1" pin="P$1"/>
+<pinref part="CONTROL" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -960,7 +960,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <wire x1="-28.448" y1="35.56" x2="-20.32" y2="35.56" width="0.1524" layer="91"/>
 <label x="-20.32" y="35.56" size="1.778" layer="95"/>
-<pinref part="U$5" gate="G$1" pin="P$5"/>
+<pinref part="CONTROL" gate="G$1" pin="P$5"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -988,7 +988,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <wire x1="-28.448" y1="40.64" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
 <label x="-20.32" y="40.64" size="1.778" layer="95"/>
-<pinref part="U$5" gate="G$1" pin="P$4"/>
+<pinref part="CONTROL" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="ARDUINO_R" class="0">
@@ -1000,7 +1000,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <wire x1="-28.448" y1="45.72" x2="-20.32" y2="45.72" width="0.1524" layer="91"/>
 <label x="-20.32" y="45.72" size="1.778" layer="95"/>
-<pinref part="U$5" gate="G$1" pin="P$3"/>
+<pinref part="CONTROL" gate="G$1" pin="P$3"/>
 </segment>
 </net>
 <net name="R" class="0">
