@@ -1,11 +1,12 @@
 [Eagle]
-Version="08 00 02"
+Version="08 01 00"
 Platform="Windows"
 Globals="Globals"
 Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="C:/Users/Hooman/workspace/UBC_Solar_Repos_PCB_Designs/UBC_Solar_Custom Library/Hooman.lbr"
 UsedLibrary="C:/Softwares/EAGLE 8.0.2/lbr/19inch.lbr"
 UsedLibrary="C:/Softwares/EAGLE 8.0.2/lbr/40xx.lbr"
 UsedLibrary="C:/Softwares/EAGLE 8.0.2/lbr/41xx.lbr"
@@ -347,7 +348,6 @@ UsedLibrary="C:/Softwares/EAGLE 8.0.2/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Softwares/EAGLE 8.0.2/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Softwares/EAGLE 8.0.2/lbr/zetex.lbr"
 UsedLibrary="C:/Softwares/EAGLE 8.0.2/lbr/zilog.lbr"
-UsedLibrary="C:/Users/Hooman/workspace/UBC_Solar_Repos_PCB_Designs/UBC_Solar_Custom Library/Hooman.lbr"
 UsedLibrary="C:/Users/Hooman/workspace/UBC_Solar_Repos_PCB_Designs/UBC_Solar_Custom Library/SparkFun-Eagle-Libraries-master/GeekAmmo.lbr"
 UsedLibrary="C:/Users/Hooman/workspace/UBC_Solar_Repos_PCB_Designs/UBC_Solar_Custom Library/SparkFun-Eagle-Libraries-master/LilyPad-Wearables.lbr"
 UsedLibrary="C:/Users/Hooman/workspace/UBC_Solar_Repos_PCB_Designs/UBC_Solar_Custom Library/SparkFun-Eagle-Libraries-master/SparkFun-Aesthetics.lbr"
@@ -922,7 +922,7 @@ UsedLibrary="C:/Softwares/EAGLE 8.0.2/lbr/seeed/Seeed-OPL-sensor.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 1259 726"
+Loc="-9 -38 1190 561"
 State=2
 Number=0
 
