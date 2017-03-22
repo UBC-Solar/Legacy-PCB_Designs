@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -270,6 +270,7 @@ DMF3Z5R5H474M3DTA0</description>
 <text x="-2.54" y="-2.54" size="0.635" layer="25">&gt;Name</text>
 </package>
 <package name="OJE-SS-112HM2-SPST-RELAY">
+<description>OJE-SS-112HM2 &lt;b&gt; SPST &lt;/b&gt; Relay</description>
 <pad name="C+" x="-6.35" y="3.8" drill="0.8" shape="square"/>
 <pad name="C-" x="-6.35" y="-3.8" drill="0.8" shape="square"/>
 <pad name="COM" x="8.89" y="3.8" drill="0.8" shape="square"/>
@@ -278,6 +279,12 @@ DMF3Z5R5H474M3DTA0</description>
 <wire x1="10.6" y1="5.1" x2="10.6" y2="-5.1" width="0.127" layer="51"/>
 <wire x1="10.6" y1="-5.1" x2="-7.62" y2="-5.1" width="0.127" layer="51"/>
 <wire x1="-7.62" y1="-5.1" x2="-7.62" y2="5.1" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="-5.08" x2="-7.62" y2="-5.08" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.2032" layer="21"/>
+<text x="-2.54" y="3.81" size="0.635" layer="27">&gt;Value</text>
+<text x="-2.54" y="1.27" size="0.635" layer="25">&gt;Name</text>
 </package>
 </packages>
 <symbols>
@@ -376,10 +383,12 @@ Digikey Link:  &lt;a href='http://www.digikey.ca/product-detail/en/omron-electro
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="NO" x="-12.7" y="0" length="middle"/>
-<pin name="COM" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="C-" x="0" y="12.7" length="middle" rot="R270"/>
-<pin name="C+" x="0" y="-12.7" length="middle" rot="R90"/>
+<pin name="NO" x="-12.7" y="0" visible="pad" length="middle"/>
+<pin name="COM" x="12.7" y="0" visible="pad" length="middle" rot="R180"/>
+<pin name="C-" x="0" y="12.7" visible="pad" length="middle" rot="R270"/>
+<pin name="C+" x="0" y="-12.7" visible="pad" length="middle" rot="R90"/>
+<text x="2.54" y="7.62" size="0.635" layer="96">&gt;Value</text>
+<text x="-7.62" y="7.62" size="0.635" layer="95">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -549,6 +558,25 @@ https://www.digikey.ca/products/en?FV=ffec3ba1,ffe0008c</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
 <connect gate="G$1" pin="P$2" pad="P$3 P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OJE-SS-112HM2">
+<description>TE SPST RELAY</description>
+<gates>
+<gate name="G$1" symbol="SPST-RELAY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OJE-SS-112HM2-SPST-RELAY">
+<connects>
+<connect gate="G$1" pin="C+" pad="C+"/>
+<connect gate="G$1" pin="C-" pad="C-"/>
+<connect gate="G$1" pin="COM" pad="COM"/>
+<connect gate="G$1" pin="NO" pad="NO"/>
 </connects>
 <technologies>
 <technology name=""/>
