@@ -1010,9 +1010,9 @@ Net GND, no value text label</description>
 <part name="GND6" library="supply" deviceset="GND_" device=""/>
 <part name="GND7" library="supply" deviceset="GND_" device=""/>
 <part name="R4_H" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/6W" value="10k"/>
-<part name="R1_L" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/6W" value="2.86k"/>
-<part name="R2_R" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/6W" value="2.86k"/>
-<part name="R3_H" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/6W" value="3.44k"/>
+<part name="R1_L" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/6W" value="1.6k"/>
+<part name="R2_R" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/6W" value="1.6k"/>
+<part name="R3_H" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/6W" value="5.1k"/>
 <part name="R5_L" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/6W" value="5k"/>
 </parts>
 <sheets>

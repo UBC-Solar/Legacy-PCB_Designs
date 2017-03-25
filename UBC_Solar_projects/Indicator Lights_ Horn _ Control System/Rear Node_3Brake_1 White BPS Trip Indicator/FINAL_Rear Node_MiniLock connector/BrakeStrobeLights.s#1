@@ -926,7 +926,7 @@ Big oval pads</description>
 <part name="R1_L" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="2.86k"/>
 <part name="R2_C" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="2.86k"/>
 <part name="R3_R" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="2.86k"/>
-<part name="R4_S" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W"/>
+<part name="R4_S" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="1.5k"/>
 <part name="GND2" library="supply" deviceset="GND_" device=""/>
 <part name="GND3" library="supply" deviceset="GND_" device=""/>
 <part name="GND1" library="supply" deviceset="GND_" device=""/>

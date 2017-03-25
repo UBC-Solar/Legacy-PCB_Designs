@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -479,9 +479,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="15.875" y="14.605" size="0.6096" layer="25" ratio="10"/>
 <attribute name="VALUE" x="15.875" y="12.7" size="0.6096" layer="27" ratio="10"/>
 </element>
-<element name="S_SW" library="adafruit" package="TO92-EBC-OVAL" value="2N2222" x="4.445" y="22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="5.08" y="19.685" size="0.6096" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="3.175" y="19.685" size="0.6096" layer="27" ratio="10" rot="R270"/>
+<element name="S_SW" library="adafruit" package="TO92-EBC-OVAL" value="2N2222" x="6.985" y="22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.62" y="19.685" size="0.6096" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="5.715" y="19.685" size="0.6096" layer="27" ratio="10" rot="R270"/>
 </element>
 </elements>
 <signals>
@@ -500,8 +500,7 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="R4_S" pad="2"/>
 <contactref element="S_SW" pad="B"/>
-<wire x1="10.795" y1="20.36" x2="8.85" y2="20.36" width="0.6096" layer="16"/>
-<wire x1="8.85" y1="20.36" x2="3.175" y2="22.86" width="0.6096" layer="16"/>
+<wire x1="5.715" y1="22.86" x2="10.795" y2="20.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="R1_L" pad="2"/>
@@ -516,9 +515,8 @@ design rules under a new name.</description>
 <signal name="L">
 <contactref element="L_SW" pad="1"/>
 <contactref element="LEFT" pad="P$2"/>
-<wire x1="29.04" y1="15.22" x2="29.675" y2="17.95" width="1.778" layer="1"/>
-<wire x1="29.675" y1="17.95" x2="27.94" y2="19.685" width="1.778" layer="1"/>
-<wire x1="27.94" y1="19.685" x2="27.94" y2="21.59" width="1.778" layer="1"/>
+<wire x1="27.94" y1="21.59" x2="27.94" y2="16.32" width="1.778" layer="1"/>
+<wire x1="27.94" y1="16.32" x2="29.04" y2="15.22" width="1.778" layer="1"/>
 </signal>
 <signal name="C">
 <contactref element="C_SW" pad="1"/>
@@ -537,13 +535,7 @@ design rules under a new name.</description>
 <signal name="S">
 <contactref element="S_SW" pad="C"/>
 <contactref element="STROBE" pad="P$2"/>
-<wire x1="7.9992" y1="17.83656875" x2="7.9992" y2="15.80343125" width="1.6764" layer="16"/>
-<wire x1="3.175" y1="20.32" x2="4.445" y2="21.39076875" width="1.6764" layer="16"/>
-<wire x1="4.445" y1="21.39076875" x2="7.9992" y2="17.83656875" width="1.6764" layer="16"/>
-<wire x1="5.08" y1="12.88423125" x2="5.08" y2="12.7" width="1.6764" layer="16"/>
-<wire x1="7.9992" y1="15.80343125" x2="5.08" y2="12.88423125" width="1.6764" layer="16"/>
-<wire x1="5.08" y1="12.7" x2="3.365" y2="12.7" width="1.6764" layer="16"/>
-<wire x1="3.365" y1="12.7" x2="3.98" y2="12.72" width="1.6764" layer="16"/>
+<wire x1="3.98" y1="12.72" x2="5.715" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <polygon width="0.3048" layer="1" isolate="0.762">

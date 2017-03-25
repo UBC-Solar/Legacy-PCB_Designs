@@ -535,7 +535,12 @@ design rules under a new name.</description>
 <signal name="S">
 <contactref element="S_SW" pad="C"/>
 <contactref element="STROBE" pad="P$2"/>
-<wire x1="3.98" y1="12.72" x2="5.715" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="5.715" y1="20.32" x2="3.81" y2="20.32" width="1.778" layer="16"/>
+<wire x1="3.81" y1="20.32" x2="2.0066" y2="18.5166" width="1.778" layer="16"/>
+<wire x1="2.0066" y1="18.5166" x2="2.0066" y2="13.2334" width="1.778" layer="16"/>
+<wire x1="2.0066" y1="13.2334" x2="2.54" y2="12.7" width="1.778" layer="16"/>
+<wire x1="2.54" y1="12.7" x2="3.96" y2="12.7" width="1.778" layer="16"/>
+<wire x1="3.96" y1="12.7" x2="3.98" y2="12.72" width="1.778" layer="16"/>
 </signal>
 <signal name="GND">
 <polygon width="0.3048" layer="1" isolate="0.762">

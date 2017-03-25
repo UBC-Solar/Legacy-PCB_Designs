@@ -923,9 +923,9 @@ Big oval pads</description>
 <part name="STROBE" library="Hooman" deviceset="53375-0210" device=""/>
 <part name="CONTROL" library="Hooman" deviceset="53375-0410" device=""/>
 <part name="POWER" library="Hooman" deviceset="53375-0210" device=""/>
-<part name="R1_L" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="2.86k"/>
-<part name="R2_C" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="2.86k"/>
-<part name="R3_R" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="2.86k"/>
+<part name="R1_L" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="5.7k"/>
+<part name="R2_C" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="5.7k"/>
+<part name="R3_R" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="5.7k"/>
 <part name="R4_S" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/6W" value="1.5k"/>
 <part name="GND2" library="supply" deviceset="GND_" device=""/>
 <part name="GND3" library="supply" deviceset="GND_" device=""/>

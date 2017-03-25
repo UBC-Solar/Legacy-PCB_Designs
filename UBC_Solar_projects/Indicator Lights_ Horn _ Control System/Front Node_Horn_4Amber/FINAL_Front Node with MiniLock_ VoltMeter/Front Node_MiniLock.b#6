@@ -529,11 +529,11 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="19.05" y="28.575" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="BATTERY" library="Hooman" package="172287-ULTRA-FIT" value="172287-11-02" x="31.75" y="3.81"/>
-<element name="R4_H" library="SparkFun-Passives" package="1/6W-RES" value="10k" x="2.54" y="-11.43"/>
-<element name="R1_L" library="SparkFun-Passives" package="1/6W-RES" value="2.86k" x="2.54" y="-24.13"/>
-<element name="R2_R" library="SparkFun-Passives" package="1/6W-RES" value="2.86k" x="2.54" y="-36.83"/>
-<element name="R3_H" library="SparkFun-Passives" package="1/6W-RES" value="3.44k" x="2.54" y="-49.53"/>
-<element name="R5_L" library="SparkFun-Passives" package="1/6W-RES" value="5k" x="2.54" y="-62.23"/>
+<element name="R4_H" library="SparkFun-Passives" package="1/6W-RES" value="10k" x="36.83" y="13.97" rot="R180"/>
+<element name="R1_L" library="SparkFun-Passives" package="1/6W-RES" value="2.86k" x="3.81" y="15.24" rot="R90"/>
+<element name="R2_R" library="SparkFun-Passives" package="1/6W-RES" value="2.86k" x="7.62" y="17.78" rot="R90"/>
+<element name="R3_H" library="SparkFun-Passives" package="1/6W-RES" value="3.44k" x="11.43" y="15.24" rot="R90"/>
+<element name="R5_L" library="SparkFun-Passives" package="1/6W-RES" value="5k" x="22.86" y="13.97"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -547,10 +547,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="HORNSWITCH">
 <contactref element="ARDUINO" pad="P$3"/>
-<wire x1="13.99" y1="3.726" x2="13.99" y2="6.33" width="0.6096" layer="16"/>
-<wire x1="13.99" y1="6.33" x2="12.7" y2="7.62" width="0.6096" layer="16"/>
 <contactref element="R3_H" pad="1"/>
-<wire x1="13.99" y1="3.726" x2="0.04" y2="-49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="13.99" y1="3.726" x2="11.43" y2="12.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <polygon width="0.8128" layer="1" isolate="0.8128">
@@ -573,34 +571,21 @@ design rules under a new name.</description>
 <contactref element="BATTERY" pad="2"/>
 <contactref element="HORN-SW" pad="NO"/>
 <contactref element="R5_L" pad="1"/>
-<wire x1="21.49" y1="3.726" x2="0.04" y2="-62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="11.43" x2="21.49" y2="3.726" width="0" layer="19" extent="1-1"/>
-<wire x1="22.86" y1="17.79" x2="16.51" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="33.5" y1="3.81" x2="21.49" y2="3.726" width="0" layer="19" extent="1-1"/>
-<wire x1="35.56" y1="17.79" x2="22.86" y2="17.79" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="24.13" x2="22.86" y2="17.79" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="24.13" x2="11.43" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="L_SW" pad="2"/>
-<wire x1="1.3208" y1="21.5392" x2="1.3208" y2="23.5458" width="0.6096" layer="16"/>
-<wire x1="1.3208" y1="23.5458" x2="3.175" y2="25.4" width="0.6096" layer="16"/>
 <contactref element="R1_L" pad="2"/>
-<wire x1="5.04" y1="-24.13" x2="1.3208" y2="21.5392" width="0" layer="19" extent="16-16"/>
+<wire x1="3.81" y1="17.74" x2="3.175" y2="25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ARDUINO_L">
 <contactref element="ARDUINO" pad="P$1"/>
-<wire x1="8.99" y1="3.726" x2="6.434" y2="3.726" width="0.6096" layer="16"/>
-<wire x1="6.434" y1="3.726" x2="2.54" y2="7.62" width="0.6096" layer="16"/>
 <contactref element="R1_L" pad="1"/>
-<wire x1="6.434" y1="3.726" x2="0.04" y2="-24.13" width="0" layer="19" extent="16-16"/>
+<wire x1="8.99" y1="3.726" x2="3.81" y2="12.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="L">
 <contactref element="L-LIGHTS" pad="P$2"/>
 <contactref element="L_SW" pad="1"/>
-<wire x1="7.64" y1="34.12" x2="7.45" y2="34.12" width="1.9304" layer="16"/>
-<wire x1="7.45" y1="34.12" x2="5.08" y2="31.75" width="1.9304" layer="16"/>
-<wire x1="5.08" y1="31.75" x2="5.08" y2="26.67" width="1.9304" layer="16"/>
+<wire x1="5.08" y1="26.67" x2="7.64" y2="34.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="COM">
 <contactref element="HORN-SW" pad="COM"/>
@@ -616,44 +601,37 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$1">
 <contactref element="HORN_SW" pad="2"/>
-<wire x1="13.97" y1="20.32" x2="15.24" y2="21.59" width="0.6096" layer="16"/>
-<wire x1="15.24" y1="21.59" x2="15.24" y2="24.765" width="0.6096" layer="16"/>
-<wire x1="15.24" y1="24.765" x2="15.875" y2="25.4" width="0.6096" layer="16"/>
 <contactref element="R3_H" pad="2"/>
-<wire x1="13.97" y1="20.32" x2="5.04" y2="-49.53" width="0" layer="19" extent="16-16"/>
+<wire x1="11.43" y1="17.74" x2="15.875" y2="25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ARDUINO_R">
 <contactref element="ARDUINO" pad="P$2"/>
-<wire x1="11.49" y1="3.726" x2="11.49" y2="5.02" width="0.6096" layer="16"/>
-<wire x1="11.49" y1="5.02" x2="7.62" y2="8.89" width="0.6096" layer="16"/>
 <contactref element="R2_R" pad="1"/>
-<wire x1="11.49" y1="3.726" x2="0.04" y2="-36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="11.49" y1="3.726" x2="7.62" y2="15.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R_SW" pad="2"/>
-<wire x1="7.62" y1="23.495" x2="9.525" y2="25.4" width="0.6096" layer="16"/>
 <contactref element="R2_R" pad="2"/>
-<wire x1="7.62" y1="23.495" x2="5.04" y2="-36.83" width="0" layer="19" extent="16-16"/>
+<wire x1="7.62" y1="20.28" x2="9.525" y2="25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R">
 <contactref element="R-LIGHTS" pad="P$2"/>
 <contactref element="R_SW" pad="1"/>
-<wire x1="16.53" y1="34.12" x2="16.53" y2="31.77" width="1.9304" layer="16"/>
-<wire x1="16.53" y1="31.77" x2="11.43" y2="26.67" width="1.9304" layer="16"/>
+<wire x1="11.43" y1="26.67" x2="16.53" y2="34.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V_METER">
 <contactref element="ARDUINO" pad="P$4"/>
 <contactref element="R5_L" pad="2"/>
 <contactref element="R4_H" pad="2"/>
-<wire x1="5.04" y1="-11.43" x2="5.04" y2="-62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="16.49" y1="3.726" x2="5.04" y2="-11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="25.36" y1="13.97" x2="34.33" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="16.49" y1="3.726" x2="25.36" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="BATTERY" pad="1"/>
 <contactref element="HORN" pad="1"/>
 <contactref element="R4_H" pad="1"/>
-<wire x1="30" y1="3.81" x2="30.96" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="0.04" y1="-11.43" x2="30" y2="3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="39.33" y1="13.97" x2="30.96" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="30" y1="3.81" x2="39.33" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

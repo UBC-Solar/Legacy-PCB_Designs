@@ -1014,6 +1014,7 @@ Net GND, no value text label</description>
 <part name="R5_L" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/4W" value="5k"/>
 <part name="GND6" library="supply" deviceset="GND_" device=""/>
 <part name="GND7" library="supply" deviceset="GND_" device=""/>
+<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/6W"/>
 </parts>
 <sheets>
 <sheet>
@@ -1055,6 +1056,7 @@ Net GND, no value text label</description>
 <instance part="R5_L" gate="G$1" x="17.78" y="-2.54" rot="R90"/>
 <instance part="GND6" gate="G$1" x="17.78" y="-15.24"/>
 <instance part="GND7" gate="G$1" x="66.04" y="-15.24"/>
+<instance part="R1" gate="G$1" x="0" y="-27.94"/>
 </instances>
 <busses>
 </busses>

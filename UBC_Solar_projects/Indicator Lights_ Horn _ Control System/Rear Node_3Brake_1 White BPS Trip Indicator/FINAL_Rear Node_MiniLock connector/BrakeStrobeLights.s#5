@@ -137,26 +137,26 @@
 <description>&lt;b&gt;Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TO18">
-<description>&lt;b&gt;TO 18&lt;/b&gt;</description>
-<wire x1="0.9289" y1="2.227" x2="2.227" y2="0.9289" width="0.0508" layer="51" curve="-44.7172"/>
-<wire x1="0.9289" y1="-2.227" x2="2.227" y2="-0.9289" width="0.0508" layer="51" curve="44.7172"/>
-<wire x1="-3.937" y1="-0.508" x2="-3.937" y2="0.508" width="0.127" layer="21"/>
-<wire x1="-2.227" y1="-0.9289" x2="0.929" y2="2.2271" width="0.0508" layer="21" curve="-135.281"/>
-<wire x1="-2.227" y1="-0.9289" x2="-0.9289" y2="-2.227" width="0.0508" layer="51" curve="44.7172"/>
-<wire x1="-3.937" y1="-0.508" x2="-2.8765" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="-0.9289" y1="-2.227" x2="0.9289" y2="-2.227" width="0.0508" layer="21" curve="45.2828"/>
-<wire x1="-3.937" y1="0.508" x2="-2.8765" y2="0.508" width="0.127" layer="21"/>
-<wire x1="2.227" y1="-0.9289" x2="2.227" y2="0.9289" width="0.0508" layer="21" curve="45.2828"/>
-<circle x="0" y="0" radius="2.921" width="0.127" layer="21"/>
-<pad name="1" x="-1.27" y="-1.27" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="-1.27" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="1.27" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="0" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.905" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.905" y="-1.27" size="1.27" layer="51" ratio="10">1</text>
-<text x="0.635" y="-1.27" size="1.27" layer="51" ratio="10">2</text>
-<text x="0" y="0.635" size="1.27" layer="51" ratio="10">3</text>
+<package name="TO92">
+<description>&lt;b&gt;TO 92&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.781"/>
+<wire x1="-2.6549" y1="-0.254" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-78.3185"/>
+<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.127" layer="21" curve="-111.1"/>
+<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.2537" y1="-0.254" x2="-0.2863" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="0.2863" y1="-0.254" x2="2.2537" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.2936"/>
+<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
+<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
+<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
 </package>
 </packages>
 <symbols>
@@ -180,17 +180,17 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="2N2222" prefix="T">
+<deviceset name="2N3904" prefix="T">
 <description>&lt;b&gt;NPN TRANSISTOR&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="NPN" x="0" y="0"/>
+<gate name="G1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO18">
+<device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="B" pad="2"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G1" pin="B" pad="2"/>
+<connect gate="G1" pin="C" pad="1"/>
+<connect gate="G1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -850,10 +850,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </class>
 </classes>
 <parts>
-<part name="T1" library="transistor" deviceset="2N2222" device=""/>
-<part name="T2" library="transistor" deviceset="2N2222" device=""/>
-<part name="T3" library="transistor" deviceset="2N2222" device=""/>
-<part name="T4" library="transistor" deviceset="2N2222" device=""/>
+<part name="T1" library="transistor" deviceset="2N3904" device=""/>
+<part name="T2" library="transistor" deviceset="2N3904" device=""/>
+<part name="T3" library="transistor" deviceset="2N3904" device=""/>
+<part name="T4" library="transistor" deviceset="2N3904" device=""/>
 <part name="K1" library="Hooman" deviceset="53375-0210" device=""/>
 <part name="K2" library="Hooman" deviceset="53375-0210" device=""/>
 <part name="K3" library="Hooman" deviceset="53375-0210" device=""/>
@@ -870,10 +870,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <plain>
 </plain>
 <instances>
-<instance part="T1" gate="G$1" x="78.74" y="104.14"/>
-<instance part="T2" gate="G$1" x="78.74" y="81.28"/>
-<instance part="T3" gate="G$1" x="78.74" y="58.42"/>
-<instance part="T4" gate="G$1" x="78.74" y="35.56"/>
+<instance part="T1" gate="G1" x="78.74" y="104.14"/>
+<instance part="T2" gate="G1" x="78.74" y="81.28"/>
+<instance part="T3" gate="G1" x="78.74" y="58.42"/>
+<instance part="T4" gate="G1" x="78.74" y="35.56"/>
 <instance part="K1" gate="G$1" x="119.38" y="104.14"/>
 <instance part="K2" gate="G$1" x="119.38" y="81.28"/>
 <instance part="K3" gate="G$1" x="119.38" y="58.42"/>
@@ -891,28 +891,28 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="N$1" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="T3" gate="G$1" pin="B"/>
+<pinref part="T3" gate="G1" pin="B"/>
 <wire x1="58.42" y1="58.42" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="T2" gate="G$1" pin="B"/>
+<pinref part="T2" gate="G1" pin="B"/>
 <wire x1="58.42" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="T4" gate="G$1" pin="B"/>
+<pinref part="T4" gate="G1" pin="B"/>
 <wire x1="58.42" y1="35.56" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="T1" gate="G$1" pin="B"/>
+<pinref part="T1" gate="G1" pin="B"/>
 <wire x1="58.42" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -923,7 +923,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="101.6" y="104.14" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="C"/>
+<pinref part="T1" gate="G1" pin="C"/>
 <wire x1="81.28" y1="109.22" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
 <label x="88.9" y="111.76" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -935,7 +935,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="101.6" y="81.28" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="T2" gate="G$1" pin="C"/>
+<pinref part="T2" gate="G1" pin="C"/>
 <wire x1="81.28" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
 <label x="88.9" y="88.9" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -947,7 +947,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="101.6" y="58.42" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="T3" gate="G$1" pin="C"/>
+<pinref part="T3" gate="G1" pin="C"/>
 <wire x1="81.28" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
 <label x="88.9" y="66.04" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -959,7 +959,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="101.6" y="35.56" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="T4" gate="G$1" pin="C"/>
+<pinref part="T4" gate="G1" pin="C"/>
 <wire x1="81.28" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 <label x="88.9" y="43.18" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -998,22 +998,22 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="22.86" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="T4" gate="G$1" pin="E"/>
+<pinref part="T4" gate="G1" pin="E"/>
 <wire x1="81.28" y1="30.48" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
 <label x="86.36" y="25.4" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="T3" gate="G$1" pin="E"/>
+<pinref part="T3" gate="G1" pin="E"/>
 <wire x1="81.28" y1="53.34" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 <label x="86.36" y="48.26" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="T2" gate="G$1" pin="E"/>
+<pinref part="T2" gate="G1" pin="E"/>
 <wire x1="81.28" y1="76.2" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
 <label x="86.36" y="71.12" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="E"/>
+<pinref part="T1" gate="G1" pin="E"/>
 <wire x1="81.28" y1="99.06" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
 <label x="86.36" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
