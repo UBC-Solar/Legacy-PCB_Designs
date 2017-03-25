@@ -1013,6 +1013,7 @@ Net GND, no value text label</description>
 <part name="R4_H" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/4W" value="10k"/>
 <part name="R5_L" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/4W" value="5k"/>
 <part name="GND6" library="supply" deviceset="GND_" device=""/>
+<part name="GND7" library="supply" deviceset="GND_" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1050,9 +1051,10 @@ Net GND, no value text label</description>
 </instance>
 <instance part="BATTERY" gate="G$1" x="-12.7" y="2.54" rot="MR0"/>
 <instance part="GND5" gate="G$1" x="0" y="-7.62"/>
-<instance part="R4_H" gate="G$1" x="17.78" y="-2.54" rot="R90"/>
-<instance part="R5_L" gate="G$1" x="7.62" y="7.62"/>
+<instance part="R4_H" gate="G$1" x="5.08" y="7.62" rot="R180"/>
+<instance part="R5_L" gate="G$1" x="17.78" y="-2.54" rot="R90"/>
 <instance part="GND6" gate="G$1" x="17.78" y="-15.24"/>
+<instance part="GND7" gate="G$1" x="66.04" y="-15.24"/>
 </instances>
 <busses>
 </busses>
@@ -1125,9 +1127,14 @@ Net GND, no value text label</description>
 <pinref part="GND5" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R4_H" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="-7.62" x2="17.78" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="R5_L" gate="G$1" pin="1"/>
 <pinref part="GND6" gate="G$1" pin="GND"/>
+<wire x1="17.78" y1="-7.62" x2="17.78" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="HORN-SW" gate="G$1" pin="NO"/>
+<wire x1="63.5" y1="-12.7" x2="66.04" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -1164,17 +1171,6 @@ Net GND, no value text label</description>
 <wire x1="99.06" y1="-12.7" x2="88.9" y2="-12.7" width="0.1524" layer="91"/>
 <label x="88.9" y="-12.7" size="1.778" layer="95"/>
 <pinref part="HORN" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="NO" class="0">
-<segment>
-<pinref part="HORN-SW" gate="G$1" pin="NO"/>
-<wire x1="63.5" y1="-12.7" x2="66.04" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="99.06" y1="-5.08" x2="88.9" y2="-5.08" width="0.1524" layer="91"/>
-<label x="88.9" y="-5.08" size="1.778" layer="95"/>
-<pinref part="HORN" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1229,20 +1225,25 @@ Net GND, no value text label</description>
 <pinref part="ARDUINO" gate="G$1" pin="P$4"/>
 <wire x1="-3.048" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="40.64" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="R4_H" gate="G$1" pin="2"/>
+<label x="7.62" y="40.64" size="1.778" layer="95"/>
+<pinref part="R4_H" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="7.62" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R5_L" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="7.62" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="7.62" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
 <junction x="17.78" y="7.62"/>
-<label x="7.62" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="12V" class="0">
 <segment>
 <pinref part="BATTERY" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="7.62" x2="2.54" y2="7.62" width="0.1524" layer="91"/>
-<label x="-7.62" y="7.62" size="1.778" layer="95"/>
-<pinref part="R5_L" gate="G$1" pin="1"/>
+<pinref part="R4_H" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="7.62" x2="0" y2="7.62" width="0.1524" layer="91"/>
+<label x="-5.08" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="99.06" y1="-5.08" x2="88.9" y2="-5.08" width="0.1524" layer="91"/>
+<label x="88.9" y="-5.08" size="1.778" layer="95"/>
+<pinref part="HORN" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

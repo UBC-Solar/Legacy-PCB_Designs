@@ -997,14 +997,14 @@ Net GND, no value text label</description>
 </net>
 <net name="ARDUINO_R" class="0">
 <segment>
-<pinref part="CONTROL" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
-<label x="10.16" y="68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R3_R" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 <label x="48.26" y="60.96" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="CONTROL" gate="G$1" pin="3"/>
+<wire x1="7.62" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
+<label x="10.16" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ARDUINO_C" class="0">
@@ -1021,14 +1021,14 @@ Net GND, no value text label</description>
 </net>
 <net name="ARDUINO_L" class="0">
 <segment>
-<pinref part="CONTROL" gate="G$1" pin="3"/>
-<wire x1="7.62" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
-<label x="10.16" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R1_L" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="104.14" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
 <label x="48.26" y="106.68" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="CONTROL" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
+<label x="10.16" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ARDUINO_S" class="0">

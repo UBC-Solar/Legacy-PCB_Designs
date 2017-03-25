@@ -1139,8 +1139,8 @@ Net GND, no value text label</description>
 <pinref part="HORN" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="HORN-SW" gate="G$1" pin="COM"/>
-<wire x1="38.1" y1="-12.7" x2="33.02" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="HORN-SW" gate="G$1" pin="NO"/>
+<wire x1="63.5" y1="-12.7" x2="66.04" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NO" class="0">
@@ -1150,8 +1150,8 @@ Net GND, no value text label</description>
 <pinref part="HORN" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="HORN-SW" gate="G$1" pin="NO"/>
-<wire x1="63.5" y1="-12.7" x2="66.04" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="HORN-SW" gate="G$1" pin="COM"/>
+<wire x1="38.1" y1="-12.7" x2="33.02" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">

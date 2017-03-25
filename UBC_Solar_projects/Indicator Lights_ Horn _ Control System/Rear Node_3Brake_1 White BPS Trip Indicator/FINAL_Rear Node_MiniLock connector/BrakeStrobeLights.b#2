@@ -500,7 +500,8 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="R4_S" pad="2"/>
 <contactref element="S_SW" pad="B"/>
-<wire x1="5.715" y1="22.86" x2="10.795" y2="20.36" width="0" layer="19" extent="1-1"/>
+<wire x1="5.715" y1="22.86" x2="8.295" y2="22.86" width="0.8128" layer="16"/>
+<wire x1="8.295" y1="22.86" x2="10.795" y2="20.36" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="R1_L" pad="2"/>
