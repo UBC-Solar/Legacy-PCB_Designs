@@ -1,0 +1,18 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+D3         DIOD-DO-41-P-2_V       3225mil       1855mil       3225mil       1855mil       3225mil   2032.165mil  T        270.00 1N4007-T       
+D2         DIOD-DO-41-P-2_V       2190mil       1855mil       2190mil       1855mil       2190mil   2032.165mil  T        270.00 1N4007-T       
+D1         DIOD-DO-41-P-2_V       1105mil       1860mil       1105mil       1860mil       1105mil   2037.165mil  T        270.00 1N4007-T       
+R3         PCB-4hlvbvydv5koig2rz41u-1       4050mil       1355mil       4050mil       1355mil       4050mil       1155mil  T        270.00 Vishay SFR16S0004701JA500
+R2         PCB-4hlvbvydv5koig2rz41u-1       3045mil       1405mil       3045mil       1405mil       3045mil       1205mil  T        270.00 Vishay SFR16S0004701JA500
+R1         PCB-4hlvbvydv5koig2rz41u-1       2075mil       1420mil       2075mil       1420mil       2075mil       1220mil  T        270.00 Vishay SFR16S0004701JA500
+Q3         PCB-859355-1          4115mil       2175mil       4115mil       2175mil   4012.638mil       2175mil  T        360.00 Fairchild Semiconductor PN2222ATF
+Q2         PCB-859355-1          3120mil       2190mil       3120mil       2190mil   3017.638mil       2190mil  T        360.00 Fairchild Semiconductor PN2222ATF
+Q1         PCB-859355-1          2010mil       2165mil       2010mil       2165mil   1907.638mil       2165mil  T        360.00 Fairchild Semiconductor PN2222ATF
+K3         PCB-2662916-1     3633.032mil    2125.63mil       3635mil       2165mil       3635mil   1846.102mil  T         90.00 Omron G5LE-1A4-DC12 Relay
+K2         PCB-2662916-1     2588.032mil    2150.63mil       2590mil       2190mil       2590mil   1871.102mil  T         90.00 Omron G5LE-1A4-DC12 Relay
+K1         PCB-2662916-1     1498.032mil    2155.63mil       1500mil       2195mil       1500mil   1876.102mil  T         90.00 Omron G5LE-1A4-DC12 Relay
+P2         PCB-4mlh9ylxcwg828pz9pwv-1       2580mil       2855mil       2580mil       2855mil    2776.85mil       2855mil  T        180.00 Phoenix Contact 1729021
+P2         PCB-4mlh9ylxcwg828pz9pwv-1       2590mil       1345mil       2590mil       1345mil    2393.15mil       1345mil  T        360.00 Phoenix Contact 1729021
+P3         PCB-rnlen50cc5tt6vc22c1r-1       3580mil       1178mil       3580mil       1180mil       3380mil       1178mil  T        360.00 TE Connectivity / AMP 3-644456-5
+
