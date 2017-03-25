@@ -508,7 +508,7 @@ design rules under a new name.</description>
 <attribute name="DESIGNER" value="Nobody" x="-13.97" y="15.24" size="1.778" layer="27" display="off"/>
 <attribute name="VERSION" value="v01" x="-13.97" y="15.24" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$1" library="Hooman" package="G8QN-1C4" value="SPDT_RELAY" x="24.13" y="34.29" rot="R180"/>
+<element name="POWER_SW" library="Hooman" package="G8QN-1C4" value="SPDT_RELAY" x="24.13" y="34.29" rot="R180"/>
 <element name="X1" library="con-molex" package="5566-4" value="5566-4" x="24.13" y="8.89">
 <attribute name="MF" value="" x="24.13" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="24.13" y="8.89" size="1.778" layer="27" display="off"/>
@@ -529,16 +529,17 @@ design rules under a new name.</description>
 <element name="BATTERY" library="Hooman" package="172287-ULTRA-FIT" value="172287-11-02" x="5.08" y="36.83" rot="R270"/>
 <element name="CAN" library="Hooman" package="172287-ULTRA-FIT" value="172287-11-02" x="83.82" y="40.64" rot="R90"/>
 <element name="FUSE-10A" library="Hooman" package="3568-MINI-297" value="3568" x="63.5" y="41.91" rot="R180"/>
+<element name="NTC_BYPASS" library="Hooman" package="G8QN-1C4" value="SPDT_RELAY" x="3.81" y="-20.32"/>
 </elements>
 <signals>
 <signal name="ZEVA+">
-<contactref element="U$1" pad="2"/>
+<contactref element="POWER_SW" pad="2"/>
 <contactref element="CONTROL" pad="2"/>
 <wire x1="5.08" y1="22.38" x2="21.07" y2="22.38" width="1.6764" layer="16"/>
 <wire x1="21.07" y1="22.38" x2="27.98" y2="29.29" width="1.6764" layer="16"/>
 </signal>
 <signal name="ZEVA-">
-<contactref element="U$1" pad="5"/>
+<contactref element="POWER_SW" pad="5"/>
 <contactref element="CONTROL" pad="1"/>
 <wire x1="5.08" y1="25.88" x2="6.83" y2="25.88" width="1.6764" layer="16"/>
 <wire x1="6.83" y1="25.88" x2="15.24" y2="34.29" width="1.6764" layer="16"/>
@@ -552,16 +553,16 @@ design rules under a new name.</description>
 <vertex x="92.71" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<contactref element="X1" pad="1"/>
-<contactref element="X1" pad="2"/>
 <contactref element="BATTERY" pad="2"/>
 <contactref element="DC-DC_CONVERTOR" pad="2"/>
 <contactref element="CAN" pad="1"/>
 <contactref element="C1" pad="-"/>
 <contactref element="R1" pad="2"/>
+<contactref element="X1" pad="2"/>
+<contactref element="X1" pad="1"/>
 </signal>
 <signal name="12V">
-<contactref element="U$1" pad="1"/>
+<contactref element="POWER_SW" pad="1"/>
 <contactref element="X1" pad="4"/>
 <contactref element="X1" pad="3"/>
 <contactref element="C3" pad="+"/>
@@ -598,7 +599,7 @@ design rules under a new name.</description>
 <wire x1="62.23" y1="38.1" x2="58.54" y2="40.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MAIN_NO">
-<contactref element="U$1" pad="3"/>
+<contactref element="POWER_SW" pad="3"/>
 <contactref element="DC-DC_CONVERTOR" pad="1"/>
 <wire x1="5.08" y1="13.18" x2="8.1" y2="13.18" width="2.54" layer="1"/>
 <wire x1="8.1" y1="13.18" x2="17.78" y2="22.86" width="2.54" layer="1"/>
@@ -607,7 +608,7 @@ design rules under a new name.</description>
 <signal name="SUPP_NC">
 <contactref element="BATTERY" pad="1"/>
 <wire x1="5.08" y1="38.58" x2="17.07" y2="38.58" width="2.1844" layer="16"/>
-<contactref element="U$1" pad="4"/>
+<contactref element="POWER_SW" pad="4"/>
 <wire x1="17.07" y1="38.58" x2="17.78" y2="39.29" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$3">

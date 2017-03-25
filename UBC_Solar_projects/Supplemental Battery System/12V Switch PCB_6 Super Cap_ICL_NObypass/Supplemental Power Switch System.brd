@@ -151,6 +151,8 @@
 <rectangle x1="92.71" y1="0" x2="93.98" y2="54.61" layer="39"/>
 <rectangle x1="-1.27" y1="-1.27" x2="93.98" y2="0" layer="39"/>
 <rectangle x1="-1.27" y1="-1.27" x2="0" y2="54.61" layer="39"/>
+<dimension x1="-1.27" y1="-1.27" x2="93.98" y2="-1.27" x3="46.355" y3="-8.89" textsize="1.778" layer="1"/>
+<dimension x1="93.98" y1="-1.27" x2="93.98" y2="54.61" x3="114.935" y3="26.67" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">

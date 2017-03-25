@@ -559,12 +559,6 @@ design rules under a new name.</description>
 <contactref element="CAN" pad="1"/>
 <contactref element="C1" pad="-"/>
 <contactref element="R1" pad="2"/>
-<wire x1="39.68" y1="26.95" x2="83.82" y2="38.89" width="0" layer="19" extent="1-1"/>
-<wire x1="37.97" y1="31.75" x2="39.68" y2="26.95" width="0" layer="19" extent="1-1"/>
-<wire x1="26.23" y1="6.14" x2="39.68" y2="26.95" width="0" layer="19" extent="1-1"/>
-<wire x1="22.03" y1="6.14" x2="26.23" y2="6.14" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="9.68" x2="22.03" y2="6.14" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="35.08" x2="5.08" y2="9.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="U$1" pad="1"/>
@@ -600,21 +594,21 @@ design rules under a new name.</description>
 <wire x1="36.83" y1="36.83" x2="40.64" y2="36.83" width="2.54" layer="1"/>
 <contactref element="FUSE-10A" pad="P$1"/>
 <contactref element="FUSE-10A" pad="P$2"/>
-<wire x1="58.54" y1="40.21" x2="22.03" y2="11.64" width="0" layer="19" extent="1-1"/>
-<wire x1="58.54" y1="43.61" x2="58.54" y2="40.21" width="0" layer="19" extent="1-1"/>
+<wire x1="58.54" y1="40.21" x2="58.54" y2="43.61" width="0" layer="19" extent="1-1"/>
+<wire x1="62.23" y1="38.1" x2="58.54" y2="40.21" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="NO">
+<signal name="MAIN_NO">
 <contactref element="U$1" pad="3"/>
 <contactref element="DC-DC_CONVERTOR" pad="1"/>
 <wire x1="5.08" y1="13.18" x2="8.1" y2="13.18" width="2.54" layer="1"/>
 <wire x1="8.1" y1="13.18" x2="17.78" y2="22.86" width="2.54" layer="1"/>
 <wire x1="17.78" y1="22.86" x2="17.78" y2="29.29" width="2.54" layer="1"/>
 </signal>
-<signal name="NC">
-<contactref element="U$1" pad="4"/>
+<signal name="SUPP_NC">
 <contactref element="BATTERY" pad="1"/>
 <wire x1="5.08" y1="38.58" x2="17.07" y2="38.58" width="2.1844" layer="16"/>
-<wire x1="17.07" y1="38.58" x2="17.78" y2="39.29" width="2.1844" layer="16"/>
+<contactref element="U$1" pad="4"/>
+<wire x1="17.07" y1="38.58" x2="17.78" y2="39.29" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="C3" pad="B"/>
@@ -671,8 +665,8 @@ design rules under a new name.</description>
 <contactref element="CAN" pad="2"/>
 <contactref element="FUSE-10A" pad="P$3"/>
 <contactref element="FUSE-10A" pad="P$4"/>
-<wire x1="68.46" y1="40.21" x2="83.82" y2="42.39" width="0" layer="19" extent="1-1"/>
-<wire x1="68.46" y1="43.61" x2="68.46" y2="40.21" width="0" layer="19" extent="1-1"/>
+<wire x1="68.46" y1="43.61" x2="83.82" y2="42.39" width="0" layer="19" extent="1-1"/>
+<wire x1="68.46" y1="40.21" x2="68.46" y2="43.61" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>

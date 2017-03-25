@@ -157,6 +157,47 @@ DMF3Z5R5H474M3DTA0</description>
 <text x="-7.62" y="5.08" size="0.635" layer="27">&gt;Value</text>
 <text x="-7.62" y="-3.81" size="0.635" layer="25">&gt;Name</text>
 </package>
+<package name="42385-MINI-FIT">
+<description>&lt;b&gt;Receptacle Header Mini-Fit &lt;/b&gt; 42835 Serires</description>
+<pad name="P$4" x="2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="P$3" x="-2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="P$1" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="P$2" x="2.1" y="-2.75" drill="1.4" shape="square"/>
+<hole x="-6.8" y="3.31" drill="3"/>
+<hole x="6.8" y="3.31" drill="3"/>
+<wire x1="4.8" y1="5.435" x2="-4.8" y2="5.435" width="0.127" layer="51"/>
+<wire x1="4.8" y1="5.435" x2="4.8" y2="5.135" width="0.127" layer="51"/>
+<wire x1="4.8" y1="1" x2="4.8" y2="-4.8" width="0.127" layer="51"/>
+<wire x1="4.8" y1="-4.8" x2="-4.8" y2="-4.8" width="0.127" layer="51"/>
+<wire x1="-4.8" y1="-4.8" x2="-4.8" y2="1" width="0.127" layer="51"/>
+<wire x1="-4.8" y1="1" x2="-8.5" y2="1" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="1" x2="-8.5" y2="5.135" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="5.135" x2="-4.8" y2="5.135" width="0.127" layer="51"/>
+<wire x1="-4.8" y1="5.135" x2="-4.8" y2="5.435" width="0.127" layer="51"/>
+<wire x1="4.8" y1="1" x2="8.75" y2="1" width="0.127" layer="51"/>
+<wire x1="8.75" y1="1" x2="8.75" y2="5.135" width="0.127" layer="51"/>
+<wire x1="8.75" y1="5.135" x2="4.8" y2="5.135" width="0.127" layer="51"/>
+<wire x1="-4.802909375" y1="-2.45751875" x2="-4.924384375" y2="-2.448175" width="0.127" layer="51"/>
+<wire x1="-4.924384375" y1="-2.448175" x2="-4.812253125" y2="-3.569478125" width="0.127" layer="51" curve="200.218235"/>
+<wire x1="-4.75" y1="5.635" x2="-4.75" y2="5.135" width="0.2032" layer="21"/>
+<wire x1="-4.75" y1="5.135" x2="-8.75" y2="5.135" width="0.2032" layer="21"/>
+<wire x1="-8.75" y1="5.135" x2="-8.75" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="-8.75" y1="0.75" x2="-5" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="-5" y1="0.75" x2="-5" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-2.25" x2="-5" y2="-3.75" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-3.75" x2="-5" y2="-5" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-5" x2="5" y2="-5" width="0.2032" layer="21"/>
+<wire x1="5" y1="-5" x2="5" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="5" y1="0.75" x2="9" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="9" y1="0.75" x2="9" y2="5.135" width="0.2032" layer="21"/>
+<wire x1="9" y1="5.135" x2="4.75" y2="5.135" width="0.2032" layer="21"/>
+<wire x1="4.75" y1="5.135" x2="4.75" y2="5.635" width="0.2032" layer="21"/>
+<wire x1="4.75" y1="5.635" x2="-4.75" y2="5.635" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-2.25" x2="-5.25" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="-2.25" x2="-5" y2="-3.75" width="0.2032" layer="21" curve="198.92467"/>
+<text x="-4" y="4.23" size="0.635" layer="27">&gt;Value</text>
+<text x="-4.25" y="0.35" size="0.635" layer="25">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DMF3Z5R5H474M3DTA0">
@@ -171,6 +212,19 @@ DMF3Z5R5H474M3DTA0</description>
 <pin name="+" x="-12.7" y="-5.08" length="middle"/>
 <pin name="B" x="-12.7" y="0" length="middle"/>
 </symbol>
+<symbol name="CON-4-PIN">
+<description>&lt;b&gt; 42385 Mini-Fit &lt;/b&gt;</description>
+<wire x1="5.08" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<pin name="1" x="10.16" y="7.62" visible="pad" length="middle" rot="R180"/>
+<pin name="2" x="10.16" y="2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="3" x="10.16" y="-2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="4" x="10.16" y="-7.62" visible="pad" length="middle" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.27" layer="96">&gt;Value</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="95">&gt;Name</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SUPER-CAPACITOR">
@@ -184,6 +238,26 @@ DMF3Z5R5H474M3DTA0</description>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
 <connect gate="G$1" pin="B" pad="B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="42385-015247040">
+<description>&lt;b&gt; Mini-Fit Receptacle Header &lt;/b&gt;
+&lt;a href= "http://www.digikey.ca/product-detail/en/molex-llc/0015247040/WM17600-ND/259398"&gt; http://www.digikey.ca/product-detail/en/molex-llc/0015247040/WM17600-ND/259398 &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CON-4-PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="42385-MINI-FIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -746,6 +820,7 @@ Net GND, no value text label</description>
 <part name="GND2" library="supply" deviceset="GND_" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="U$1" library="Hooman" deviceset="42385-015247040" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -764,9 +839,10 @@ Net GND, no value text label</description>
 <instance part="R5" gate="G$1" x="111.76" y="93.98" rot="R90"/>
 <instance part="R6" gate="G$1" x="104.14" y="83.82" rot="R90"/>
 <instance part="GND1" gate="G$1" x="93.98" y="134.62"/>
-<instance part="GND2" gate="G$1" x="60.96" y="132.08"/>
-<instance part="SUPPLY1" gate="G$1" x="60.96" y="144.78"/>
+<instance part="GND2" gate="G$1" x="63.5" y="144.78"/>
+<instance part="SUPPLY1" gate="G$1" x="60.96" y="134.62"/>
 <instance part="SUPPLY2" gate="G$1" x="88.9" y="86.36"/>
+<instance part="U$1" gate="G$1" x="43.18" y="134.62"/>
 </instances>
 <busses>
 </busses>
@@ -848,6 +924,18 @@ Net GND, no value text label</description>
 <wire x1="111.76" y1="137.16" x2="93.98" y2="137.16" width="0.1524" layer="91"/>
 <junction x="111.76" y="137.16"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="137.16" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="137.16" x2="58.42" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="G$1" pin="GND"/>
+<wire x1="58.42" y1="147.32" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="142.24" x2="55.88" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="142.24" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="147.32" x2="58.42" y2="147.32" width="0.1524" layer="91"/>
+<junction x="58.42" y="147.32"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -860,6 +948,16 @@ Net GND, no value text label</description>
 <wire x1="104.14" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="78.74" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
 <junction x="104.14" y="78.74"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="3"/>
+<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
+<wire x1="53.34" y1="132.08" x2="60.96" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="132.08" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="4"/>
+<wire x1="53.34" y1="127" x2="60.96" y2="127" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="127" x2="60.96" y2="132.08" width="0.1524" layer="91"/>
+<junction x="60.96" y="132.08"/>
 </segment>
 </net>
 </nets>

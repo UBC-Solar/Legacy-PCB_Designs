@@ -631,8 +631,12 @@ design rules under a new name.</description>
 <signal name="MAIN_NO">
 <contactref element="POWER_SW" pad="3"/>
 <contactref element="DC-DC_CONVERTOR" pad="1"/>
-<wire x1="3.81" y1="13.18" x2="11.83" y2="13.18" width="3.81" layer="16"/>
-<wire x1="11.83" y1="13.18" x2="26.59" y2="27.94" width="3.81" layer="16"/>
+<wire x1="6.83" y1="13.18" x2="3.81" y2="13.18" width="2.54" layer="16"/>
+<wire x1="6.83" y1="13.18" x2="7.62" y2="13.97" width="2.54" layer="16"/>
+<wire x1="26.59" y1="27.94" x2="25.4" y2="27.94" width="3.81" layer="16"/>
+<wire x1="11.43" y1="13.97" x2="7.62" y2="13.97" width="3.81" layer="16"/>
+<wire x1="7.62" y1="13.97" x2="6.83" y2="13.18" width="3.81" layer="16"/>
+<wire x1="25.4" y1="27.94" x2="11.43" y2="13.97" width="3.81" layer="16"/>
 </signal>
 <signal name="SUPP_NC">
 <contactref element="BATTERY" pad="1"/>

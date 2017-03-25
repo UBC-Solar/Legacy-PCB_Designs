@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -147,6 +147,8 @@
 <hole x="3.175" y="55.245" drill="3.2"/>
 <hole x="88.9" y="53.975" drill="3.2"/>
 <hole x="88.9" y="3.175" drill="3.2"/>
+<dimension x1="0" y1="0" x2="92.71" y2="0" x3="46.355" y3="-7.62" textsize="1.778" layer="1" dtype="vertical"/>
+<dimension x1="92.71" y1="0" x2="92.71" y2="57.15" x3="107.95" y3="28.575" textsize="1.778" layer="1" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
