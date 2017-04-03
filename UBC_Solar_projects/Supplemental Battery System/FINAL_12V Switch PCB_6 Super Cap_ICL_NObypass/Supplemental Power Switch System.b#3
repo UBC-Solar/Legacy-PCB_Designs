@@ -142,16 +142,16 @@
 <wire x1="91.11" y1="54.6" x2="1.27" y2="54.6" width="0" layer="20"/>
 <wire x1="1.27" y1="54.6" x2="1.27" y2="1.27" width="0" layer="20"/>
 <hole x="4.445" y="4.445" drill="3.2"/>
-<hole x="22.86" y="4.445" drill="3.2"/>
+<hole x="24.13" y="4.445" drill="3.2"/>
 <hole x="49.53" y="51.435" drill="3.2"/>
 <hole x="4.445" y="51.435" drill="3.2"/>
 <hole x="88.9" y="51.435" drill="3.2"/>
 <hole x="88.9" y="5.08" drill="3.2"/>
-<rectangle x1="1.27" y1="54.61" x2="95.25" y2="55.88" layer="39"/>
 <rectangle x1="91.44" y1="1.27" x2="92.71" y2="55.88" layer="39"/>
-<rectangle x1="0" y1="0" x2="95.25" y2="1.27" layer="39"/>
 <rectangle x1="0" y1="0" x2="1.27" y2="55.88" layer="39"/>
 <hole x="88.9" y="34.29" drill="3.2"/>
+<rectangle x1="0" y1="54.61" x2="92.71" y2="55.88" layer="39"/>
+<rectangle x1="0" y1="0" x2="92.71" y2="1.27" layer="39"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">

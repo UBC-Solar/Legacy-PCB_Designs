@@ -142,7 +142,7 @@
 <wire x1="74.6" y1="38.09" x2="1.27" y2="38.09" width="0" layer="20"/>
 <wire x1="1.27" y1="38.09" x2="1.27" y2="1.27" width="0" layer="20"/>
 <hole x="72.39" y="3.81" drill="3.2"/>
-<hole x="72.39" y="35.56" drill="3.2"/>
+<hole x="72.39" y="33.02" drill="3.2"/>
 <rectangle x1="1.27" y1="38.1" x2="76.2" y2="39.37" layer="39"/>
 <rectangle x1="74.93" y1="1.27" x2="76.2" y2="39.37" layer="39"/>
 <rectangle x1="1.27" y1="0" x2="76.2" y2="1.27" layer="39"/>
@@ -463,8 +463,8 @@ design rules under a new name.</description>
 <polygon width="0.6096" layer="1" isolate="0.762" thermals="no">
 <vertex x="1.27" y="38.1" curve="0.03"/>
 <vertex x="30.48" y="38.1"/>
-<vertex x="30.48" y="19.685"/>
-<vertex x="1.27" y="19.685"/>
+<vertex x="30.48" y="19.05"/>
+<vertex x="1.27" y="19.05"/>
 </polygon>
 </signal>
 <signal name="N$1">
