@@ -617,9 +617,10 @@ https://www.digikey.ca/products/en?FV=ffec3ba1,ffe0008c</description>
 <deviceset name="SL22-2R515">
 <description>NTC Ametherm Inrush Current Limiter</description>
 <gates>
+<gate name="G$1" symbol="NTC_THERMISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="SL22-2R515">
 <technologies>
 <technology name=""/>
 </technologies>

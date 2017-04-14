@@ -621,6 +621,10 @@ https://www.digikey.ca/products/en?FV=ffec3ba1,ffe0008c</description>
 </gates>
 <devices>
 <device name="" package="SL22-2R515">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

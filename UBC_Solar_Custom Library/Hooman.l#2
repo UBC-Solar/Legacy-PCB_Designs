@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -150,23 +150,23 @@ DMF3Z5R5H474M3DTA0</description>
 <pad name="P$2" x="2.1" y="-2.75" drill="1.4" shape="square"/>
 <hole x="-6.8" y="3.31" drill="3"/>
 <hole x="6.8" y="3.31" drill="3"/>
-<wire x1="4.8" y1="4.8" x2="-4.8" y2="4.8" width="0.127" layer="51"/>
-<wire x1="4.8" y1="4.8" x2="4.8" y2="4.5" width="0.127" layer="51"/>
+<wire x1="4.8" y1="5.435" x2="-4.8" y2="5.435" width="0.127" layer="51"/>
+<wire x1="4.8" y1="5.435" x2="4.8" y2="5.135" width="0.127" layer="51"/>
 <wire x1="4.8" y1="1" x2="4.8" y2="-4.8" width="0.127" layer="51"/>
 <wire x1="4.8" y1="-4.8" x2="-4.8" y2="-4.8" width="0.127" layer="51"/>
 <wire x1="-4.8" y1="-4.8" x2="-4.8" y2="1" width="0.127" layer="51"/>
 <wire x1="-4.8" y1="1" x2="-8.5" y2="1" width="0.127" layer="51"/>
-<wire x1="-8.5" y1="1" x2="-8.5" y2="4.5" width="0.127" layer="51"/>
-<wire x1="-8.5" y1="4.5" x2="-4.8" y2="4.5" width="0.127" layer="51"/>
-<wire x1="-4.8" y1="4.5" x2="-4.8" y2="4.8" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="1" x2="-8.5" y2="5.135" width="0.127" layer="51"/>
+<wire x1="-8.5" y1="5.135" x2="-4.8" y2="5.135" width="0.127" layer="51"/>
+<wire x1="-4.8" y1="5.135" x2="-4.8" y2="5.435" width="0.127" layer="51"/>
 <wire x1="4.8" y1="1" x2="8.75" y2="1" width="0.127" layer="51"/>
-<wire x1="8.75" y1="1" x2="8.75" y2="4.5" width="0.127" layer="51"/>
-<wire x1="8.75" y1="4.5" x2="4.8" y2="4.5" width="0.127" layer="51"/>
+<wire x1="8.75" y1="1" x2="8.75" y2="5.135" width="0.127" layer="51"/>
+<wire x1="8.75" y1="5.135" x2="4.8" y2="5.135" width="0.127" layer="51"/>
 <wire x1="-4.802909375" y1="-2.45751875" x2="-4.924384375" y2="-2.448175" width="0.127" layer="51"/>
 <wire x1="-4.924384375" y1="-2.448175" x2="-4.812253125" y2="-3.569478125" width="0.127" layer="51" curve="200.218235"/>
-<wire x1="-4.75" y1="5" x2="-4.75" y2="4.5" width="0.2032" layer="21"/>
-<wire x1="-4.75" y1="4.5" x2="-8.75" y2="4.5" width="0.2032" layer="21"/>
-<wire x1="-8.75" y1="4.5" x2="-8.75" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="-4.75" y1="5.635" x2="-4.75" y2="5.135" width="0.2032" layer="21"/>
+<wire x1="-4.75" y1="5.135" x2="-8.75" y2="5.135" width="0.2032" layer="21"/>
+<wire x1="-8.75" y1="5.135" x2="-8.75" y2="0.75" width="0.2032" layer="21"/>
 <wire x1="-8.75" y1="0.75" x2="-5" y2="0.75" width="0.2032" layer="21"/>
 <wire x1="-5" y1="0.75" x2="-5" y2="-2.25" width="0.2032" layer="21"/>
 <wire x1="-5" y1="-2.25" x2="-5" y2="-3.75" width="0.2032" layer="21"/>
@@ -174,17 +174,14 @@ DMF3Z5R5H474M3DTA0</description>
 <wire x1="-5" y1="-5" x2="5" y2="-5" width="0.2032" layer="21"/>
 <wire x1="5" y1="-5" x2="5" y2="0.75" width="0.2032" layer="21"/>
 <wire x1="5" y1="0.75" x2="9" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="9" y1="0.75" x2="9" y2="4.5" width="0.2032" layer="21"/>
-<wire x1="9" y1="4.5" x2="4.75" y2="4.5" width="0.2032" layer="21"/>
-<wire x1="4.75" y1="4.5" x2="4.75" y2="5" width="0.2032" layer="21"/>
-<wire x1="4.75" y1="5" x2="-4.75" y2="5" width="0.2032" layer="21"/>
+<wire x1="9" y1="0.75" x2="9" y2="5.135" width="0.2032" layer="21"/>
+<wire x1="9" y1="5.135" x2="4.75" y2="5.135" width="0.2032" layer="21"/>
+<wire x1="4.75" y1="5.135" x2="4.75" y2="5.635" width="0.2032" layer="21"/>
+<wire x1="4.75" y1="5.635" x2="-4.75" y2="5.635" width="0.2032" layer="21"/>
 <wire x1="-5" y1="-2.25" x2="-5.25" y2="-2.25" width="0.127" layer="21"/>
 <wire x1="-5.25" y1="-2.25" x2="-5" y2="-3.75" width="0.2032" layer="21" curve="198.92467"/>
 <text x="-4" y="5.5" size="0.635" layer="27">&gt;Value</text>
 <text x="-4.25" y="-6" size="0.635" layer="25">&gt;Name</text>
-<dimension x1="2.100828125" y1="2.742728125" x2="6.8" y2="3.31" x3="4.4504125" y3="7.62" textsize="1.27" layer="1" dtype="horizontal"/>
-<dimension x1="6.8" y1="3.31" x2="2.1050125" y2="2.7386375" x3="16.51" y3="3.02431875" textsize="1.27" layer="1" dtype="vertical"/>
-<dimension x1="2.113709375" y1="-2.751940625" x2="-2.113709375" y2="-2.751940625" x3="0" y3="-7.62" textsize="1.27" layer="1" dtype="horizontal"/>
 </package>
 <package name="53375-0210-MINI-LOCK">
 <description>&lt;b&gt; Mini-Lock Header 2 pin &lt;/b&gt; 53375-0210</description>
