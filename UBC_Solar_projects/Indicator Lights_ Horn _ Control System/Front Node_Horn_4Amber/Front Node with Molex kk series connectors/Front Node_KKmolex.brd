@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -115,6 +115,10 @@
 <hole x="2.54" y="2.54" drill="3.2"/>
 <hole x="35.56" y="2.54" drill="3.2"/>
 <hole x="35.56" y="34.29" drill="3.2"/>
+<rectangle x1="-1.27" y1="-1.27" x2="0" y2="38.1" layer="39"/>
+<rectangle x1="0" y1="-1.27" x2="39.37" y2="0" layer="39"/>
+<rectangle x1="37.846" y1="0" x2="39.116" y2="38.354" layer="39"/>
+<rectangle x1="-1.27" y1="37.338" x2="37.846" y2="38.1" layer="39"/>
 </plain>
 <libraries>
 <library name="Wurth_Elektronik_Electromechanic_Wire_to_Board_Connectors_rev15c">

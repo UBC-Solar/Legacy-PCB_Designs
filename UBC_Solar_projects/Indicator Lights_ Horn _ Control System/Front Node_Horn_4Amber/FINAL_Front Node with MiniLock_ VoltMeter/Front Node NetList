@@ -1,0 +1,61 @@
+Netlist
+
+Exported from Front Node_MiniLock.brd at 2017-03-31 11:48 PM
+
+EAGLE Version 8.1.0 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Net        Part     Pad
+
+12V        BATTERY  2
+           HORN     1
+           R4_H     1
+
+ARDUINO_L  ARDUINO  P$1
+           R1_L     1
+
+ARDUINO_R  ARDUINO  P$2
+           R2_R     1
+
+COM        HORN     2
+           HORN-SW  COM
+
+GND        ARDUINO  P$6
+           BATTERY  1
+           D1       A
+           HORN-SW  C-
+           HORN-SW  NO
+           L_SW     3
+           R5_L     1
+           R_SW     3
+
+HORNSWITCH ARDUINO  P$3
+           R3_H     1
+
+L          L-LIGHTS P$2
+           L_SW     1
+
+N$1        HORN_SW  2
+           R3_H     2
+
+N$2        R2_R     2
+           R_SW     2
+
+N$3        D1       C
+           HORN-SW  C+
+           HORN_SW  3
+
+N$8        L_SW     2
+           R1_L     2
+
+R          R-LIGHTS P$2
+           R_SW     1
+
+VCC        ARDUINO  P$5
+           HORN_SW  1
+           L-LIGHTS P$1
+           R-LIGHTS P$1
+
+V_METER    ARDUINO  P$4
+           R4_H     2
+           R5_L     2
+
